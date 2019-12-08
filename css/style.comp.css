@@ -444,16 +444,16 @@ h1, h2, h3, h4, h5, h6 {
   .design__cards {
     grid-row: 3 / 4;
     grid-column: 1 / -1;
-    margin: 5rem 5rem 0rem 5rem;
+    margin: 5rem 3rem 0rem 3rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around; }
   .design__card {
-    width: 32rem;
+    width: 18%;
     border: 2px solid #e4e4e4;
     border-radius: 1rem;
     overflow: hidden;
-    margin: 0 3rem;
+    margin: 0 2rem;
     margin-bottom: 8rem; }
     .design__card--img {
       width: 100%;
@@ -485,16 +485,16 @@ h1, h2, h3, h4, h5, h6 {
   .design__populars {
     grid-row: 5 / -1;
     grid-column: 1 / -1;
-    margin: 5rem 5rem 50rem 5rem;
+    margin: 5rem 3rem 50rem 3rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around; }
   .design__popular {
-    width: 32rem;
+    width: 18%;
     border: 2px solid #e4e4e4;
     border-radius: 1rem;
     overflow: hidden;
-    margin: 0 3rem;
+    margin: 0 2rem;
     margin-bottom: 8rem; }
     .design__popular--img {
       width: 100%; }
