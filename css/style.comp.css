@@ -449,7 +449,7 @@ h1, h2, h3, h4, h5, h6 {
     flex-wrap: wrap;
     justify-content: space-around; }
   .design__card {
-    width: 18%;
+    width: 15%;
     border: 2px solid #e4e4e4;
     border-radius: 1rem;
     overflow: hidden;
@@ -490,7 +490,7 @@ h1, h2, h3, h4, h5, h6 {
     flex-wrap: wrap;
     justify-content: space-around; }
   .design__popular {
-    width: 18%;
+    width: 15%;
     border: 2px solid #e4e4e4;
     border-radius: 1rem;
     overflow: hidden;
