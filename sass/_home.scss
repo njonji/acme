@@ -1,0 +1,38 @@
+.home {
+    height: calc(100vh - 12rem );
+   margin-top: 7rem;
+    &__title {
+        color: rgba(128,128,128,.5);
+        text-align: center;
+        font-size: 4rem;
+        font-weight: 600;
+        letter-spacing: .2rem;
+        
+    }
+
+    &__images {
+         margin-top: 11rem;
+         height: 50rem;
+         display: flex;
+         justify-content: space-between;
+
+         &--1 {
+             width: 33%;
+         }
+         &--2 {
+             width: 33%;
+         }
+         &--3 {
+             width: 33%;
+         }
+    }
+
+    &__title2 {
+        margin-top: 5rem;
+        color: rgba(128,128,128,.5);
+        text-align: center;
+        font-size: 4rem;
+        font-weight: 600;
+        letter-spacing: .2rem;
+    }
+}

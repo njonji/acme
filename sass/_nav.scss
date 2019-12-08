@@ -1,0 +1,77 @@
+.navbar {
+     
+    background: $color-white;
+    z-index: 20;
+    margin-top: 5rem;
+    &__links {
+         padding-right: 23rem;
+        @media only screen and (max-width:$bp-large) {
+            margin: 0;
+            text-align: center;
+            padding: 0 0 2rem 0;
+        }
+    }
+
+    &--logo { 
+      margin-left: 15rem;
+       width: 10rem;
+       height: auto;
+
+    }
+  }
+  .navbar-icon {
+    font-size: 3rem;
+    color: $color-black;
+  }
+  .navbar-toggler {
+    outline: none !important;
+    padding-bottom: 3.5rem !important;
+
+  }
+  .nav-link {
+    color: $color-text;
+    margin-right: 2.5rem;
+    text-transform: capitalize;
+    font-family:  "Montserrat", sans-serif !important;
+    font-weight: 400;
+    display: inline-block;
+    transition: all .3s linear;
+    font-size: 1.7rem;
+  }
+  .nav-link:hover {
+    color: $color-primary;
+  }
+ 
+
+  
+   /* CUSTOM NAV TOGGLER */
+   .bars {
+    width: 3.5rem;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: .4s ease;
+
+
+
+    &__second {
+      background-color: $color-white;
+    }
+}
+
+.change1 {
+   transform: rotate(-45deg) translate(-9px, 6px);
+   @media only screen and (max-width:$bp-small-3) {
+    transform: rotate(-45deg) translate(-6px, 5px);
+ }
+}
+.change3 {
+   transform: rotate(45deg) translate(-8px, -8px);
+   @media only screen and (max-width:$bp-small-3) {
+    transform: rotate(45deg) translate(-10px, -10px);
+ }
+   
+}
+.change2 {
+   opacity: 0;
+} 
