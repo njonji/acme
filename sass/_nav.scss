@@ -3,8 +3,18 @@
     background: $color-white;
     z-index: 20;
     margin-top: 5rem;
+
+    @media only screen and (max-width:$bp-small) {
+      display: none;
+    }
     &__links {
          padding-right: 23rem;
+         @media only screen and (max-width:$bp-wide-3) {
+          padding-right: 18rem;
+       }
+         @media only screen and (max-width:$bp-wide-5) {
+          padding-right: 13rem;
+       }
         @media only screen and (max-width:$bp-large) {
             margin: 0;
             text-align: center;
@@ -16,6 +26,12 @@
       margin-left: 15rem;
        width: 10rem;
        height: auto;
+       @media only screen and (max-width:$bp-wide-3) {
+        margin-left: 10rem;
+     }
+       @media only screen and (max-width:$bp-wide-5) {
+        margin-left: 5rem;
+     }
 
     }
   }
@@ -37,6 +53,10 @@
     display: inline-block;
     transition: all .3s linear;
     font-size: 1.7rem;
+    @media only screen and (max-width:$bp-wide-3) {
+      font-size: 1.5rem;
+   }
+    
   }
   .nav-link:hover {
     color: $color-primary;
