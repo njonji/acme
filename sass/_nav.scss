@@ -1,12 +1,14 @@
 .navbar {
      
-    background: $color-white;
+    background:$color-white;
     z-index: 20;
-    margin-top: 5rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition:  all .5s;
+ 
 
-    @media only screen and (max-width:$bp-small) {
-      display: none;
-    }
     &__links {
          padding-right: 23rem;
          @media only screen and (max-width:$bp-wide-3) {
@@ -32,6 +34,9 @@
        @media only screen and (max-width:$bp-wide-5) {
         margin-left: 5rem;
      }
+     @media only screen and (max-width:$bp-large) {
+    display: none;
+  }
 
     }
   }
@@ -41,7 +46,7 @@
   }
   .navbar-toggler {
     outline: none !important;
-    padding-bottom: 3.5rem !important;
+    padding-bottom: .5rem !important;
 
   }
   .nav-link {
@@ -56,12 +61,18 @@
     @media only screen and (max-width:$bp-wide-3) {
       font-size: 1.5rem;
    }
+   @media only screen and (max-width:$bp-large) {
+    font-size: 1.9rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+  }
     
   }
   .nav-link:hover {
     color: $color-primary;
   }
  
+
 
   
    /* CUSTOM NAV TOGGLER */
@@ -95,3 +106,12 @@
 .change2 {
    opacity: 0;
 } 
+
+
+.animate {
+  transform: translateY(-100%);
+}
+.sticky {
+  transform: translateY(0);
+}
+

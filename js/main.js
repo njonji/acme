@@ -1,4 +1,33 @@
 /* MAIN NAV LOGIC */
+var scroll = $(document).scrollTop();
+var navHeight = $('.navbar').outerHeight();
+$(document).ready(function() {
+
+    $(window).on('scroll', function() {
+        var scrolled = $(document).scrollTop();
+
+        if(scrolled > navHeight) {
+            $('.navbar').addClass('animate');
+        } else {
+            $('.navbar').removeClass('animate');
+        }
+        if(scrolled > scroll) {
+            $('.navbar').removeClass('sticky');
+        } else {
+            $('.navbar').addClass('sticky');
+        }
+
+        scroll = $(document).scrollTop();
+
+
+    })
+})
+/* 
+ADING TRANSPARENT BACKGROUND TO NAV */
+
+
+const navbar = document.querySelector(".navbar")
+
 const toggler = document.querySelector(".navbar-toggler")
 const barOne = document.querySelector(".bar1")
 const barTwo = document.querySelector(".bar2")
@@ -10,9 +39,9 @@ toggler.addEventListener("click", e => {
     barOne.classList.toggle("change1")
     barTwo.classList.toggle("change2")
     barTre.classList.toggle("change3")
+    navbar.classList.toggle('transparentNav')
 })
 /* MAIN NAV LOGIC END*/
-
 
 
 /* POPUPS START */

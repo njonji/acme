@@ -1,12 +1,15 @@
 .services {
-
+     margin-top: 15rem;
     display: grid;
     grid-template-rows: 10rem max-content;
     grid-template-columns: repeat(12, 1fr);
     position: relative;
 
     @media only screen and (max-width:$bp-medium) {
-        grid-template-rows: 10rem 60rm max-content;
+        grid-template-rows: 10rem 60rem max-content;
+     }  
+    @media only screen and (max-width:$bp-small) {
+        margin-top: 0;
      }  
 
     &__title {
@@ -291,6 +294,13 @@
             align-items: center;
             justify-items: center;
             padding-bottom: 10;
+           margin-top: 10rem;            
+
+           }  
+         @media only screen and (max-width:$bp-small) {
+ 
+           margin-top: 0;            
+
          }  
    
     }
@@ -307,6 +317,8 @@
         @media only screen and (max-width:$bp-medium) {
             width: 35rem;
          }  
+
+
 
         &--1 {
             grid-row: 1 / 2;
@@ -382,8 +394,9 @@
              @media only screen and (max-width:$bp-medium) {
                 grid-row: 6 / 7;
                 grid-column: 1 / -1;
-                margin:0; 
+                margin-left: 0;
              }  
+       
            
         }
         &--7 {
@@ -408,6 +421,18 @@
         }
 
 
+        &--titleXS {
+             display: none;
+             @media only screen and (max-width:$bp-medium) {
+                 display: block;
+                 color: $color-builders;
+                 font-size: 2.6rem;
+                 letter-spacing: .3rem;
+                margin: 3rem 0;
+       
+             }  
+
+        }
 
 
         &--image {

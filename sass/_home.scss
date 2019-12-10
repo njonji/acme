@@ -1,22 +1,11 @@
 .home {
-    height: calc(100vh - 12rem );
-   margin-top: 5rem;
+    
+   height: calc(100vh - 12rem );
+   margin-top: 15rem;
 
-        @media only screen and (max-width:$bp-small) {
-            height: 100vh;
-            width: 100vw;
-            margin: 0;
-            background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),url("/img/home/home1.png")right center/cover fixed no-repeat;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-content: center;
-                }
-        @media only screen and (max-width:$bp-small-3) {
-
-            background:linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url("/img/home/home1.png") cover fixed no-repeat;
-        
-                }
+   @media only screen and (max-width:$bp-small) {
+    display: none;
+  }
     &__title {
         color: rgba(128,128,128,.5);
         text-align: center;
@@ -27,50 +16,17 @@
         @media only screen and (max-width:$bp-wide-3) {
             font-size: 3.4rem;
          }
-
-         @media only screen and (max-width:$bp-small) {
-           color: $color-white;
-           margin: 50% auto;
-
-          }
-         @media only screen and (max-width:$bp-small-4) {
-   
-           margin: 75% auto;
-        
-          }
-
-         &--span {
-            color: $color-white;
-            text-align: center;
-            font-size: 4rem;
-            font-weight: 600;
-            letter-spacing: .2rem;
-           
-             display: none;
-             @media only screen and (max-width:$bp-small) {
-                font-size: 3.4rem;
-               display: block;
-              }
-         }
-
-         &--logo {
-             width: 12rem;
-             height: auto;
-             
-             display: none;
-             @media only screen and (max-width:$bp-small) {
-               margin: 2rem auto;
-               display: block;
-              }
-         }
-        
+    
     }
 
     &__images {
          margin-top: 4rem;
          height: 55rem;
          display: flex;
-         justify-content: space-between;
+         justify-content: center;
+         @media only screen and (max-width:$bp-wide-3) {
+            height: 50rem;
+         }
 
          &--1 {
              width: 33%;
@@ -80,9 +36,7 @@
              @media only screen and (max-width:$bp-medium) {
                width: 100%;
              }
-             @media only screen and (max-width:$bp-small) {
-                display: none;
-              }
+          
          }
          &--2 {
              width: 33%;
@@ -112,92 +66,123 @@
             display: none;
           }
     }
+
+
 }
 
-.home2 {
-
-    height: 100vh;
-    width: 100vw;
-    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)),url("/img/home/home3.png")center/cover fixed no-repeat;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    display: none;
-    @media only screen and (max-width:$bp-small) {
-        display: block;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-
-    
-    &__title {
-        color: $color-white;
-        text-align: center;
-        font-size: 3.5rem;
-        font-weight: 600;
-        letter-spacing: .2rem;
-        margin-bottom: 4rem;
-    
-    
-        }
-
-     &__text {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;   
-        
 
 
-            &--p {
-            color: $color-white;
-            font-size: 2rem;
-            font-weight: 400;
+.homeslide {
+ height: 100vh;
+ width: 100vw;
+
+
+        &__title {
+            color:$color-white;
+            text-align: center;
+            font-size: 3.4rem;
+            font-weight: 600;
             letter-spacing: .2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            margin-top:40rem;
+    
         }
-     }   
+        &__span {
+            color: $color-white;
+            text-align: center;
+            font-size: 3.4rem;
+            font-weight: 600;
+            letter-spacing: .2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+        }
 
+        &__logo {
+            width: 12rem;
+            height: auto;
+            margin: 2rem auto;
+        }
+
+    
+         &__text {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-self: center; 
+            width: 35rem;  
+            margin: 3rem auto;
+
+                &--p {
+                color: $color-white;
+                font-size: 2.2rem;
+                font-weight: 400;
+                letter-spacing: .2rem;
+            }
+         } 
+         
+         &__info {
+            text-align: justify;
+            color: $color-white;
+            margin: 2rem 8rem;
+            font-size: 1.8rem;
+            font-weight: 400;
+         }
+ 
+    &--1 {
+
+    background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),url("/img/home/home1.png")right center/cover fixed no-repeat;
+ }
+    &--2 {
+        
+        background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)),url("/img/home/home3.png")center/cover fixed no-repeat;
+ }
+    &--3 {
+        
+        background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)),url("/img/home/home2.png")center/cover fixed no-repeat;
+ }
 }
-.home3 {
 
-    height: 100vh;
-    width: 100vw;
-    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)),url("/img/home/home2.png")center/cover fixed no-repeat;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
+.carousel {
     display: none;
     @media only screen and (max-width:$bp-small) {
         display: block;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
 
-    
-    &__title {
-        color: $color-white;
-        text-align: center;
-        font-size: 3.3rem;
-        font-weight: 600;
-        letter-spacing: .2rem;
-        margin-bottom: 4rem;
-    
-    
-        }
-
-     &__text {
-         text-align: justify;
-        color: $color-white;
-        margin: 0 8rem;
-        font-size: 1.8rem;
-        font-weight: 400;
-       
-        
-     }   
-
+       }
 }
+
+
+
+/* @media only screen and (max-width:$bp-small) {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),url("/img/home/home1.png")right center/cover fixed no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+        }
+@media only screen and (max-width:$bp-small-3) {
+
+    background:linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url("/img/home/home1.png") cover fixed no-repeat;
+
+        } */
+
+
+
+/*         @media only screen and (max-width:$bp-small) {
+            color: $color-white;
+            margin: 50% auto;
+ 
+           }
+          @media only screen and (max-width:$bp-small-4) {
+    
+            margin: 75% auto;
+         
+           } */
