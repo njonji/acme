@@ -879,8 +879,8 @@ h1, h2, h3, h4, h5, h6 {
     .design__wrapper--close {
       position: absolute;
       font-size: 5rem;
-      top: 10px;
-      right: 12px;
+      top: 5x;
+      right: 5px;
       color: #fff;
       cursor: pointer; }
   .design__prozor {
@@ -906,11 +906,8 @@ h1, h2, h3, h4, h5, h6 {
     @media only screen and (max-width: 66.3em) {
       .design__prozor {
         grid-template-rows: 1fr 1fr;
-        height: 85rem;
+        height: 95vh;
         width: 60%; } }
-    @media only screen and (max-width: 50em) {
-      .design__prozor {
-        height: 90rem; } }
     @media only screen and (max-width: 42em) {
       .design__prozor {
         padding: 2rem;
@@ -939,6 +936,10 @@ h1, h2, h3, h4, h5, h6 {
         .design__prozor--img {
           width: 100%;
           height: 40rem; } }
+      @media only screen and (max-width: 25.5em) {
+        .design__prozor--img {
+          width: 100%;
+          height: 30rem; } }
     .design__prozor--title {
       color: #808080;
       margin: 3rem 0; }
@@ -1034,6 +1035,9 @@ h1, h2, h3, h4, h5, h6 {
     .projects__card--img {
       width: 100%;
       border-radius: 1rem; }
+      @media only screen and (max-width: 25.5em) {
+        .projects__card--img {
+          width: 35rem; } }
     .projects__card--title {
       margin: 0;
       color: #808080;

@@ -41,6 +41,10 @@
         &--img {
             width: 100%;
             border-radius: 1rem;
+
+            @media only screen and (max-width:$bp-small-4) {
+                width: 35rem;
+              } 
         }
 
         &--title {
