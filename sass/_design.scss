@@ -229,8 +229,13 @@
 
              @media only screen and (max-width:$bp-wide-5) {
                grid-template-rows: 1fr 1fr;
-               height: 95vh;
+               height: 85rem;
                width: 60%;
+             } 
+
+             @media only screen and (max-width:$bp-medium) {
+               height: 90rem;
+
              } 
 
              @media only screen and (max-width:$bp-small) {
@@ -238,10 +243,7 @@
                 width: 85%;
               } 
 
-              @media only screen and (max-width:$bp-small-4) {
-                height: 85vh;
-
-               } 
+  
 
             &--lijeva {
                 grid-column: 1 / 2; 

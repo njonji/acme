@@ -266,8 +266,10 @@ h1, h2, h3, h4, h5, h6 {
         display: none; } }
 
 .homeslide {
-  height: 100vh;
-  width: 100vw; }
+  height: calc(100vh + 5.4rem);
+  width: 100vw;
+  margin: 0;
+  padding: 0; }
   .homeslide__title {
     color: #fff;
     text-align: center;
@@ -278,7 +280,7 @@ h1, h2, h3, h4, h5, h6 {
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    margin-top: 40rem; }
+    margin-top: 35rem; }
   .homeslide__span {
     color: #fff;
     text-align: center;
@@ -904,15 +906,15 @@ h1, h2, h3, h4, h5, h6 {
     @media only screen and (max-width: 66.3em) {
       .design__prozor {
         grid-template-rows: 1fr 1fr;
-        height: 95vh;
+        height: 85rem;
         width: 60%; } }
+    @media only screen and (max-width: 50em) {
+      .design__prozor {
+        height: 90rem; } }
     @media only screen and (max-width: 42em) {
       .design__prozor {
         padding: 2rem;
         width: 85%; } }
-    @media only screen and (max-width: 25.5em) {
-      .design__prozor {
-        height: 85vh; } }
     .design__prozor--lijeva {
       grid-column: 1 / 2; }
       @media only screen and (max-width: 66.3em) {
