@@ -34,13 +34,18 @@ const barTwo = document.querySelector(".bar2")
 const barTre = document.querySelector(".bar3")
 
 
-
 toggler.addEventListener("click", e => {
     barOne.classList.toggle("change1")
     barTwo.classList.toggle("change2")
     barTre.classList.toggle("change3")
     navbar.classList.toggle('transparentNav')
+    barOne.classList.toggle('barsWhite')
+    barTre.classList.toggle('barsWhite')
+ 
 })
+
+
+
 /* MAIN NAV LOGIC END*/
 
 
@@ -131,3 +136,33 @@ busiPopup.addEventListener('click', e => {
     busiPopup.style.display = 'none'
 })
 /* POPUPS END */
+
+
+/* DESIGN SERVICE MODALS START */
+
+const closeBtnModals = document.querySelectorAll('.design__wrapper--close');
+const twoDplan = document.querySelector('#twodplan');
+const twoDplanModal = document.querySelector('#twodplan--modal');
+
+closeBtnModals.forEach(btn => btn.addEventListener('click', () => {
+    twoDplanModal.style.display = 'none'
+
+}))
+
+
+twoDplan.addEventListener('click', () => {
+    twoDplanModal.style.display = 'block'
+})
+
+twoDplanModal.addEventListener('click', e => {
+    if(e.target === twoDplanModal )
+    twoDplanModal.style.display = 'none'
+})
+
+
+
+
+
+
+
+/* DESIGN SERVICE MODALS END */

@@ -1,0 +1,55 @@
+.projects {
+    margin-top: 5rem;
+    height: max-content;
+    
+    
+
+    &__cards {
+        width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: 5rem auto;
+
+        @media only screen and (max-width:$bp-huge-2) {
+            width: 90%;
+          } 
+    
+    }
+
+    &__card {
+        
+        width: 40rem;
+        overflow: hidden;
+        margin:0 2rem 8rem 2rem;
+
+        @media only screen and (max-width:$bp-small-4) {
+            width: 35rem;
+          } 
+     
+
+        &--link {
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+        
+    
+        &--img {
+            width: 100%;
+            border-radius: 1rem;
+        }
+
+        &--title {
+            margin: 0;
+            color: $color-text;
+            margin: 1rem 0 0 1rem;
+            font-size: 1.2rem;
+            font-weight: 600;
+            text-align: justify;
+        }
+    }
+}

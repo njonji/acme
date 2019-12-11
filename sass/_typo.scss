@@ -1,0 +1,28 @@
+.customBtn {
+    &,
+    &:link,
+    &:visited {
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 1.5rem 4rem;
+        display: inline-block;
+        position: relative;
+       font-size: 1.5rem;
+       text-decoration: none;
+       color: $color-white;
+       font-weight: 600;
+       letter-spacing: .2rem;
+        cursor: pointer;
+        transition: all .3s ease-in-out;
+        background: $color-text-services;
+        border-radius: 2rem;
+        width: 75%;
+
+    }
+
+   &:hover {
+    background-color: $color-text;
+    color: $color-white;
+    }
+
+}

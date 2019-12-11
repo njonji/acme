@@ -18,10 +18,11 @@
           padding-right: 13rem;
        }
         @media only screen and (max-width:$bp-large) {
-            margin: 0;
+            margin-top: 20rem;
             text-align: center;
             padding: 0 0 2rem 0;
         }
+   
     }
 
     &--logo { 
@@ -47,6 +48,8 @@
   .navbar-toggler {
     outline: none !important;
     padding-bottom: .5rem !important;
+    cursor: pointer;
+
 
   }
   .nav-link {
@@ -62,9 +65,12 @@
       font-size: 1.5rem;
    }
    @media only screen and (max-width:$bp-large) {
-    font-size: 1.9rem;
+    font-size: 2.1rem;
     font-weight: 600;
-    margin-bottom: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 5rem;
+    margin-right: 0;
+    color: $color-white;
   }
     
   }
@@ -82,9 +88,7 @@
     background-color: #333;
     margin: 6px 0;
     transition: .4s ease;
-
-
-
+    cursor: pointer;
     &__second {
       background-color: $color-white;
     }
@@ -114,4 +118,16 @@
 .sticky {
   transform: translateY(0);
 }
+
+.transparentNav {
+  background: rgba(0,0,0,.8);
+   
+   
+}
+
+.barsWhite {
+  background-color: $color-white !important;
+}
+
+
 
