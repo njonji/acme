@@ -232,14 +232,35 @@
                height: 95vh;
                width: 60%;
              } 
-
-    
+             @media only screen  and (max-height:750px) and (max-width:$bp-wide-5) {
+               width: 90%;
+               
+             } 
+             @media only screen  and (max-height:700px) and (max-width:$bp-wide-5) {
+               width: 95%;
+               padding: 1rem;
+             } 
 
              @media only screen and (max-width:$bp-small) {
                 padding:2rem;
                 width: 85%;
               } 
-
+              @media only screen and (max-height:800px) {
+                padding: 1rem;
+              }
+              @media only screen and (min-height:700px) and (max-width:$bp-small-3) {
+                height: 85vh;
+              }
+              @media only screen and (min-height:750px) and (max-width:$bp-small-3) {
+                height: 75vh;
+              }
+              @media only screen and (min-height:850px) and (max-width:$bp-small-3) {
+                height: 70vh;
+              }
+              @media only screen and (min-height:950px) and (max-width:$bp-small-3) {
+                height: 65vh;
+              }
+       
   
 
             &--lijeva {

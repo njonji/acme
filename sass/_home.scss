@@ -2,6 +2,7 @@
     
    height: calc(100vh - 12rem );
    margin-top: 15rem;
+   
 
    @media only screen and (max-width:$bp-small) {
     display: none;
@@ -24,10 +25,14 @@
          height: 55rem;
          display: flex;
          justify-content: center;
+
+    
          @media only screen and (max-width:$bp-wide-3) {
             height: 50rem;
          }
-
+         @media only screen and (max-height:800px) {
+            height: 42rem;
+          }
          &--1 {
              width: 33%;
              @media only screen and (max-width:$bp-wide-3) {
@@ -73,7 +78,7 @@
 
 
 .homeslide {
- height: calc(100vh + 5.4rem );
+ height: 100vh;
  width: 100vw;
  margin: 0;
  padding:0;
@@ -89,7 +94,7 @@
             flex-direction: column;
             justify-content: center;
             align-content: center;
-            margin-top:35rem;
+            margin-top:20rem;
     
         }
         &__span {

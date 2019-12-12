@@ -240,6 +240,11 @@
         &--1 {
          background: $color-homeowners;
 
+         @media only screen and (max-height:800px) {
+            top:10%;
+            padding: 2rem;
+          }
+
         }
         &--2 {
          background: $color-builders;
