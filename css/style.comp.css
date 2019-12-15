@@ -1071,12 +1071,6 @@ h1, h2, h3, h4, h5, h6 {
     @media only screen and (max-height: 750px) and (max-width: 66.3em) {
       .design__prozor {
         width: 90%; } }
-    @media only screen and (min-height: 1100px) {
-      .design__prozor {
-        height: 80vh; } }
-    @media only screen and (min-height: 1200px) {
-      .design__prozor {
-        height: 70vh; } }
     @media only screen and (max-width: 42em) {
       .design__prozor {
         padding: 2rem;
@@ -1084,6 +1078,15 @@ h1, h2, h3, h4, h5, h6 {
     @media only screen and (max-height: 800px) {
       .design__prozor {
         padding: 1rem; } }
+    @media only screen and (min-height: 1000px) and (max-width: 42em) {
+      .design__prozor {
+        height: 80vh; } }
+    @media only screen and (min-height: 1100px) and (max-width: 42em) {
+      .design__prozor {
+        height: 70vh; } }
+    @media only screen and (min-height: 1200px) and (max-width: 42em) {
+      .design__prozor {
+        height: 60vh; } }
     @media only screen and (min-height: 700px) and (max-width: 30em) {
       .design__prozor {
         height: 85vh; } }

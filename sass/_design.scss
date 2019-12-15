@@ -231,6 +231,12 @@
             grid-template-columns: 1fr 1fr;
             z-index: 100;
             overflow-y: auto;
+
+
+            @media only screen and (max-height:1200px) {
+              
+           }  
+
             @media only screen and (max-width:$bp-wide-2) {
                 width: 85%;
              }  
@@ -244,19 +250,25 @@
                width: 90%;
                
              } 
-             @media only screen  and (min-height:1100px){
-            height: 80vh;
-             } 
-             @media only screen  and (min-height:1200px){
-            height: 70vh;
-             } 
+
 
              @media only screen and (max-width:$bp-small) {
                 padding:2rem;
                 width: 85%;
               } 
+
+  
               @media only screen and (max-height:800px) {
                 padding: 1rem;
+              }
+              @media only screen and (min-height:1000px) and (max-width:$bp-small) {
+                height: 80vh;
+              }
+              @media only screen and (min-height:1100px) and (max-width:$bp-small) {
+                height: 70vh;
+              }
+              @media only screen and (min-height:1200px) and (max-width:$bp-small) {
+                height: 60vh;
               }
               @media only screen and (min-height:700px) and (max-width:$bp-small-3) {
                 height: 85vh;
