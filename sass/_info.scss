@@ -88,6 +88,19 @@
                 outline: none !important;
             }
 
+            &--spanXL {
+                @media only screen and (max-width:$bp-small) {
+                    display: none;
+                   }
+            }
+
+            &--spanXS {
+                display: none;
+                @media only screen and (max-width:$bp-small) {
+                    display: block;
+                   }
+            }
+
             &-FAQ {
                 display: none;
                 animation-name: fadein;
@@ -172,13 +185,21 @@
 
         &--plus {
            position: absolute;
-           top: 8px;
+           top: 9px;
            left: 6px;
+           @media only screen and (max-width:$bp-small-4) {
+            top: 7px;
+            left:6px;
+           }
         }
         &--minus {
             position: absolute;
-            top: 8px;
+            top: 9px;
             left: 6px;
+            @media only screen and (max-width:$bp-small-4) {
+                top: 7px;
+                left:6px;
+               }
         }
     }
 

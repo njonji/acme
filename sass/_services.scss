@@ -252,19 +252,13 @@
 
         &--1 {
          background: $color-homeowners;
-
+         overflow-y: auto;
          @media only screen and (max-height:800px) {
             top:10%;
             padding: 2rem;
-            height: 70vh;
-            overflow-y: auto;
-          }
-         @media only screen and (max-width:$bp-small) and (max-height:700px) {
-
-            height: 80vh;
+           overflow-y: auto;
           }
   
-   
 
         }
         &--2 {

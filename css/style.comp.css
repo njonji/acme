@@ -287,6 +287,9 @@ h1, h2, h3, h4, h5, h6 {
     @media only screen and (max-width: 61.75em) and (min-height: 1000px) {
       .homeslide__title {
         margin-top: 50rem; } }
+    @media only screen and (max-width: 42em) {
+      .homeslide__title {
+        margin-top: 20rem; } }
   .homeslide__span {
     color: #fff;
     text-align: center;
@@ -526,16 +529,13 @@ h1, h2, h3, h4, h5, h6 {
         display: block;
         text-align: left; }
     .services__popup--1 {
-      background: #dbc6d2; }
+      background: #dbc6d2;
+      overflow-y: auto; }
       @media only screen and (max-height: 800px) {
         .services__popup--1 {
           top: 10%;
           padding: 2rem;
-          height: 70vh;
           overflow-y: auto; } }
-      @media only screen and (max-width: 42em) and (max-height: 700px) {
-        .services__popup--1 {
-          height: 80vh; } }
     .services__popup--2 {
       background: #C0D6C9; }
     .services__popup--3 {
@@ -1341,6 +1341,14 @@ h1, h2, h3, h4, h5, h6 {
       margin: 2rem 3rem 2rem 3rem; }
       .info__accordion--btn, .info__accordion--btn:link, .info__accordion--btn:visited {
         outline: none !important; }
+      @media only screen and (max-width: 42em) {
+        .info__accordion--btn--spanXL {
+          display: none; } }
+      .info__accordion--btn--spanXS {
+        display: none; }
+        @media only screen and (max-width: 42em) {
+          .info__accordion--btn--spanXS {
+            display: block; } }
       .info__accordion--btn-FAQ {
         display: none;
         animation-name: fadein;
@@ -1402,12 +1410,20 @@ h1, h2, h3, h4, h5, h6 {
         padding: 2rem; }
     .info__accordion--plus {
       position: absolute;
-      top: 8px;
+      top: 9px;
       left: 6px; }
+      @media only screen and (max-width: 25.5em) {
+        .info__accordion--plus {
+          top: 7px;
+          left: 6px; } }
     .info__accordion--minus {
       position: absolute;
-      top: 8px;
+      top: 9px;
       left: 6px; }
+      @media only screen and (max-width: 25.5em) {
+        .info__accordion--minus {
+          top: 7px;
+          left: 6px; } }
 
 .acc {
   display: flex;
