@@ -17,12 +17,18 @@
         background: $color-text-services;
         border-radius: 2rem;
         width: 75%;
-
+    
     }
 
    &:hover {
     background-color: $color-text;
     color: $color-white;
+    }
+
+    &__contact {
+     font-size: 1.3rem;
+     width: 10rem;
+     padding: .5rem 1rem;
     }
 
 }

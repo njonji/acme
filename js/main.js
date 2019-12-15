@@ -22,6 +22,8 @@ $(document).ready(function() {
 
     })
 })
+
+
 /* 
 ADING TRANSPARENT BACKGROUND TO NAV */
 
@@ -166,3 +168,187 @@ twoDplanModal.addEventListener('click', e => {
 
 
 /* DESIGN SERVICE MODALS END */
+
+
+/* info accordian start */
+
+const accBtnOne = document.querySelector('#button--1');
+const panelOne = document.querySelector('#panel--1');
+
+const plusOne = document.querySelector('#plus--1');
+const minusOne = document.querySelector('#minus--1');
+
+
+accBtnOne.addEventListener('click', () => {
+    panelOne.classList.toggle("panelActive")
+    plusOne.classList.toggle("plusClass")
+    minusOne.classList.toggle("minusClass")
+    accBtnOne.classList.toggle("noBorder")
+    panelOne.classList.toggle("zInd--100")
+    accBtnOne.classList.toggle("zInd--150")
+})
+
+const accBtnTwo = document.querySelector('#button--2');
+const panelTwo = document.querySelector('#panel--2');
+
+const plusTwo = document.querySelector('#plus--2');
+const minusTwo = document.querySelector('#minus--2');
+
+
+accBtnTwo.addEventListener('click', () => {
+    panelTwo.classList.toggle("panelActive")
+    plusTwo.classList.toggle("plusClass")
+    minusTwo.classList.toggle("minusClass")
+    accBtnTwo.classList.toggle("noBorder")
+    panelTwo.classList.toggle("zInd--100")
+    accBtnTwo.classList.toggle("zInd--150")
+})
+
+const accBtnThree = document.querySelector('#button--3');
+const panelThree = document.querySelector('#panel--3');
+
+const plusThree = document.querySelector('#plus--3');
+const minusThree = document.querySelector('#minus--3');
+
+
+accBtnThree.addEventListener('click', () => {
+    panelThree.classList.toggle("panelActive")
+    plusThree.classList.toggle("plusClass")
+    minusThree.classList.toggle("minusClass")
+    accBtnThree.classList.toggle("noBorder")
+    panelThree.classList.toggle("zInd--100")
+    accBtnThree.classList.toggle("zInd--150")
+})
+
+const faqs = document.querySelectorAll(".info__accordion--btn-FAQ")
+const faqsPanels = document.querySelectorAll(".info__accordion--FAQ")
+const accBtnFor = document.querySelector('#button--4');
+
+const plusFor = document.querySelector('#plus--4');
+const minusFor = document.querySelector('#minus--4');
+
+accBtnFor.addEventListener('click', () => {
+    plusFor.classList.toggle("plusClass")
+    minusFor.classList.toggle("minusClass")
+    faqs.forEach(faq => {
+        faq.classList.toggle("panelActive")
+    })
+    faqs.forEach(faq => {
+        faq.classList.toggle("collapsed")
+    })
+    faqsPanels.forEach(faq => {
+        faq.classList.remove("show")
+    })
+})
+
+
+
+
+
+/* ACCORDION RIGHT */
+const accBtnFive = document.querySelector('#button--5');
+
+const plusFive = document.querySelector('#plus--5');
+const minusFive = document.querySelector('#minus--5');
+
+
+accBtnFive.addEventListener('click', () => {
+    plusFive.classList.toggle("plusClass")
+    minusFive.classList.toggle("minusClass")
+})
+
+
+const accBtnSix = document.querySelector('#button--6');
+
+const plusSix = document.querySelector('#plus--6');
+const minusSix = document.querySelector('#minus--6');
+
+
+accBtnSix.addEventListener('click', () => {
+    plusSix.classList.toggle("plusClass")
+    minusSix.classList.toggle("minusClass")
+})
+
+
+const accBtnSeven = document.querySelector('#button--7');
+
+const plusSeven = document.querySelector('#plus--7');
+const minusSeven = document.querySelector('#minus--7');
+
+
+accBtnSeven.addEventListener('click', () => {
+    plusSeven.classList.toggle("plusClass")
+    minusSeven.classList.toggle("minusClass")
+})
+/* info accordian end */
+
+
+/* services cards start */
+const briefBtn = document.querySelector('#brief');
+const briefContent = document.querySelectorAll(".serviceDisplay")
+
+const briefPlus = document.querySelector("#briefPlus")
+const briefMinus = document.querySelector("#briefMinus")
+
+briefBtn.addEventListener('click', e => {
+   e.target.classList.toggle("serviceBtnBorder")
+    briefContent.forEach(brief => {
+        brief.classList.toggle("activeFlex")
+    })
+    briefPlus.classList.toggle("plusClass")
+    briefMinus.classList.toggle("minusClass")
+
+})
+
+const startBtn = document.querySelector('#start');
+const startContent = document.querySelectorAll(".startDisplay")
+
+const startPlus = document.querySelector("#startPlus")
+const startMinus = document.querySelector("#startMinus")
+
+startBtn.addEventListener('click', e => {
+   e.target.classList.toggle("serviceBtnBorder")
+    startContent.forEach(start => {
+        start.classList.toggle("activeFlex")
+    })
+    briefPlus.classList.toggle("plusClass")
+    briefMinus.classList.toggle("minusClass")
+
+})
+
+const bespokeBtn = document.querySelector('#bespoke');
+const bespokeContent = document.querySelector(".bespokeDisplay")
+
+const bespokePlus = document.querySelector("#bespokePlus")
+const bespokeMinus = document.querySelector("#bespokeMinus")
+
+bespokeBtn.addEventListener('click', e => {
+   e.target.classList.toggle("serviceBtnBorder")
+    bespokeContent.classList.toggle("activeFlex")
+    bespokePlus.classList.toggle("plusClass")
+    bespokeMinus.classList.toggle("minusClass")
+
+})
+
+
+/* services cards end */
+
+/* about logic */
+
+const expand = document.querySelector('.about__text--expand');
+const expandText = document.querySelector('.about__text--info');
+
+expand.addEventListener('click', e => {
+    e.preventDefault();
+    expandText.classList.add("displayText")
+    e.target.style.display = "none"
+ })
+/*  about logic end */
+
+
+
+
+
+function noscroll() {
+    window.scrollTo(0,0)
+}

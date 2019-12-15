@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,600|Roboto:300i,400,500&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link rel="stylesheet" href="css/bootstrap.min.css" >
-    <link rel="stylesheet" href="css/style.css" >
+    <link rel="stylesheet" href="css/style.prefix.css" >
     <title>Acme3d</title>
 </head>
 <body>
@@ -107,12 +107,15 @@
 <div class="carousel-inner" role="listbox">
       <!--  slide 1 -->
       <div class="carousel-item active homeslide homeslide--1">
+          <div class="overlayCar">
         <h1 class="homeslide__title">Spatial, Interior & Furniture Design 
           <span class="home__title--span homeslide__span">Online <img class="home__title--logo homeslide__logo" src="/img/home/spanlogo.png" alt="spanLogo"></span>
          </h1>
+        </div>
       </div>
       <!--  slide 2 -->
       <div class="carousel-item homeslide homeslide--2">
+        <div class="overlayCar">
         <h1 class="homeslide__title">In 3 steps:</h1>
 
         <div class="homeslide__text">
@@ -120,10 +123,11 @@
             <p class="homeslide__text--p">2 - Collaborate online</p>
             <p class="homeslide__text--p">3 - Enjoy your bespoke design</p>
         </div>
-
+      </div>
       </div>
       <!--  slide 3 -->
       <div class="carousel-item homeslide homeslide--3">
+        <div class="overlayCar">
         <h1 class="homeslide__title">Design Service <br> Without Borders</h1>
 
         <p class="homeslide__info">
@@ -131,7 +135,7 @@
             part of the world. We design unique spaces and furniture based on 
             brief, information and feedback provided by our clients.
         <p>
-
+        </div>
       </div>
 </div> <!-- end of carousel inner -->
 </div>
@@ -273,19 +277,19 @@
    <!--  right side of services start -->
    <div class="services__right">
             
-            
+            <img src="/img/icons/123.png" alt="123" class="services__right--3steps">
            
              <!-- card 1 start -->
       <div class="services__card services__card--1">
           <h5 class="services__card--titleXS">Step 1</h5>
              <img src="img/icons/Brief.png" alt="Brief" class="services__card--image">
-             <h2 class="services__card--title">your design brief</h2>
-             <p class="services__card--text">Tell us about what you would like to change or create. 
+             <h2 class="services__card--title services__card--title--1" id="brief"> <i class="fas fa-plus services__card--title--plus" id="briefPlus"></i><i class="fas fa-minus services__card--title--minus" id="briefMinus"></i>your design brief</h2>
+             <p class="services__card--text services__card--text--1 serviceDisplay">Tell us about what you would like to change or create. 
                You can send us a brief or respond to a questionnaire.</p>
 
       </div>
              <!-- card 2 start -->
-      <div class="services__card services__card--2">
+      <div class="services__card services__card--2 serviceDisplay">
              <img src="img/icons/Dimensions.png" alt="Dimensions" class="services__card--image">
              <h2 class="services__card--title">dimensions</h2>
              <p class="services__card--text">To create a 3D model of your space we need
@@ -294,7 +298,7 @@
 
       </div>
              <!-- card 3 start -->
-      <div class="services__card services__card--3">
+      <div class="services__card services__card--3 serviceDisplay">
              <img src="img/icons/Images.png" alt="Images" class="services__card--image">
              <h2 class="services__card--title">images</h2>
              <p class="services__card--text">Not essential but help greatly - send us images of: -
@@ -308,15 +312,15 @@
       <div class="services__card services__card--4">
           <h5 class="services__card--titleXS">Step 2</h5>
              <img src="img/icons/trafick.png" alt="trafick" class="services__card--image services__card--image--4">
-             <h2 class="services__card--title">start project</h2>
-             <p class="services__card--text services__card--text--4">Your project starts with approval of your brief, 
+             <h2 class="services__card--title services__card--title--2" id="start"><i class="fas fa-plus services__card--title--plus" id="startPlus"></i><i class="fas fa-minus services__card--title--minus" id="startMinus"></i>start project</h2>
+             <p class="services__card--text services__card--text--4 startDisplay">Your project starts with approval of your brief, 
                design fee confirmation and a collaboration service setup.
               </p>
 
       </div>
 
             <!-- card 5 start -->
-            <div class="services__card services__card--5">
+            <div class="services__card services__card--5 startDisplay">
               <img src="img/icons/Feedbacks-Revisions.png" alt="Feedbacks-Revisions" class="services__card--image">
               <h2 class="services__card--title">feedback & revisions</h2>
               <p class="services__card--text services__card--text--5">Your project may have a few options to choose from - 
@@ -326,7 +330,7 @@
   
           </div>
             <!-- card 6 start -->
-            <div class="services__card services__card--6">
+            <div class="services__card services__card--6 startDisplay">
               <img src="img/icons/London.png" alt="london" class="services__card--image services__card--image--6">
               <h2 class="services__card--title">Londoners</h2>
               <p class="services__card--text">If you live in London you can follow all the steps
@@ -340,8 +344,8 @@
             <div class="services__card services__card--7">
                 <h5 class="services__card--titleXS">Step 3</h5>
               <img src="img/icons/BespokeDesign.png" alt="BespokeDesign" class="services__card--image services__card--image--7">
-              <h2 class="services__card--title">Your Bespoke Design</h2>
-              <p class="services__card--text services__card--text--7">Congratulations!!! Now you have your bespoke design.  
+              <h2 class="services__card--title services__card--title--3" id="bespoke"><i class="fas fa-plus services__card--title--plus" id="bespokePlus"></i><i class="fas fa-minus services__card--title--minus" id="bespokeMinus"></i>Your Bespoke Design</h2>
+              <p class="services__card--text services__card--text--7 bespokeDisplay">Congratulations!!! Now you have your bespoke design.  
                 According to your chosen design service you have everything necessary to make your first design steps
                  or turn your dream into reality. Your bespoke design final edit will be sent as a file that can be viewed
                   on any electronic device or as a printout, ready to be priced and commissioned
@@ -483,8 +487,6 @@
 </div>
 
 
-<div class="design__break"></div>
-
 <h2 class="design__title2">Most Popular</h2>
 
 <div class="design__populars">
@@ -529,20 +531,22 @@
 <section class="about">
    
     <div class="about__title">
-        <h1 class="about__title--h1">about us</h1>
+        <h1 class="about__title--h1">about us <span class="about__title--span" > & what we do</span></h1>
      </div>
 
      <div class="about__text">
         We are a design and manufacture collaborative team based in London with backgrounds in 
         Spatial, Interior, Sustainable, Furniture and Graphic design and production.
-         After more than two decades of transforming people’s habitats and businesses, 
-         we concentrated our efforts and expertise towards creation of bespoke designs online. 
-          By simplifying an extensive process, we are making our design service available and 
-          more affordable to a wider scope of people - basically the whole world. <br>Our offline 
-          services are open to Londoners.<br>To us design is not a matter of status and 
-          wealth - weather you live in a mansion or a tiny flat, have a food truck or
-           a whole holiday resort - we approach each project with equal care and focus
-            on how our design corresponds to its users and its environment.
+            <span class="about__text--expand">...expand</span>
+        <span class="about__text--info"> After more than two decades of transforming people’s habitats and businesses, 
+          we concentrated our efforts and expertise towards creation of bespoke designs online. 
+           By simplifying an extensive process, we are making our design service available and 
+           more affordable to a wider scope of people - basically the whole world. <br>Our offline 
+           services are open to Londoners.<br>To us design is not a matter of status and 
+           wealth - weather you live in a mansion or a tiny flat, have a food truck or
+            a whole holiday resort - we approach each project with equal care and focus
+             on how our design corresponds to its users and its environment.</span>
+
      </div>
 
 </section>
@@ -551,11 +555,10 @@
 
 <section class="projects">
    
-    <div class="about__title">
-        <h1 class="about__title--h1">projects</h1>
+    <div class="projects__title">
+        <h1 class="projects__title--h1"><span class="projects__title--span">Some of our</span> Projects</h1>
      </div>
 
-     <div class="design__break"></div>
 
      <div class="projects__cards">
        <!-- project karta 1 -->
@@ -660,6 +663,216 @@
 
 </section>
 <!-- projects section end-->
+<!-- info section start-->
+<section class="info">
+    
+  <div class="info__title">
+    <h1 class="info__title--h1"> <span class="info__title--span">your</span> guidelines & information</h1>
+  </div>
+
+  <div class="info__accordions">
+
+   <!--  accordion one start -->
+    <div class="acc--1 acc">
+      <img src="/img/icons/Dimensions.png" alt="Dimensions" class="info__accordion--icon">
+    <div class="info__acordion info__acordion--1">
+      <button class="info__accordion--btn" id="button--1"> <i class="fas fa-plus info__accordion--plus" id="plus--1"></i> 
+        <i class="fas fa-minus info__accordion--minus" id="minus--1"></i>drawing guidelines</button>
+       <div class="info__accordion--panel" id="panel--1">
+        FLOOR PLAN DRAWING - a drawing of the floor space as if viewed from above ELEVATION DRAWING - 
+        a view of a wall or an object when facing it. Most walls are simple and do not require any drawings 
+        to explain them (apart from denoting their height). Others, especially if we are designing fitted furniture
+         around permanent features, require an elevation drawing with all dimensions. ELEVATIONS AND PLANS can be: -
+          a simple hand drawing on a piece of paper showing dimensions, you can than scan it or take a photo of it - 
+          a professional technical drawing (formats: DWG, PDF, JPEG, PNG) - a room plan generated by smart phone apps 
+          For total novices we prepared a little ‘How to Instructions’ PDF which you can print for reference
+        HowToInstructions    
+       </div>
+     </div>
+    </div>
+<!--  accordion two start -->
+    <div class="acc--2 acc">
+      <img src="/img/icons/Images.png" alt="Apart" class="info__accordion--icon">
+     <div class="info__acordion info__acordion--2">
+      <button class="info__accordion--btn" id="button--2"><i class="fas fa-plus info__accordion--plus" id="plus--2"></i>
+        <i class="fas fa-minus info__accordion--minus" id="minus--2"></i>images</button>
+       <div class="info__accordion--panel" id="panel--2">
+        PHOTOS OF YOUR SPACE - try to capture all corners and important details of the space you want designed. 
+        Videos work great too. If you cannot supply these, do not worry - they do make our job easier but we can 
+        often work without them. REFERENCE IMAGES - photos of design, art, architecture, landscape, furniture or any 
+        design details you like. These can be images taken by yourself, found in books, magazines or varous websites
+        like Pinterest - over there you can visit out page, pick what you like and send us a link
+        
+       </div>
+     </div>
+     </div>
+
+     <!--  accordion 3 start -->
+    <div class="acc--3 acc">
+      <img src="/img/icons/Feedbacks-Revisions.png" alt="Feedbacks-Revisions" class="info__accordion--icon">
+     <div class="info__acordion info__acordion--3">
+      <button class="info__accordion--btn" id="button--3"> 
+        <i class="fas fa-plus info__accordion--plus" id="plus--3"> </i> <i class="fas fa-minus info__accordion--minus" id="minus--3"></i>feedback</button>
+       <div class="info__accordion--panel" id="panel--3">
+        Sometimes there is only one solution, sometimes there are three or more - you might be perfectly happy with
+         our first design and no further work will be required. For more complex cases, two additional design revisions
+          are included in your design fee. Any further revisions incur a cost so carefully consider what best works for 
+          you and clearly communicate your feedback.
+        
+       </div>
+     </div>
+     </div>
+
+     <!--  accordion 4 start -->
+    <div class="acc--4 acc">
+      <img src="/img/icons/FAQ.png" alt="Feedbacks-Revisions" class="info__accordion--icon">
+     <div class="info__acordion info__acordion--4" >
+      <button class="info__accordion--btn" id="button--4" > 
+        <i class="fas fa-plus info__accordion--plus" id="plus--4"> </i> <i class="fas fa-minus info__accordion--minus" id="minus--4"></i>FAQ</button>
+        
+        
+        
+        <div class="info__accordion--FAQS">
+
+       
+        <!--  FAQ 1 start -->
+        <button class="info__accordion--btn info__accordion--btn-FAQ" id="button--5" data-target="#faq--1" data-toggle="collapse" >    
+        <i class="fas fa-plus info__accordion--plus" id="plus--5"> </i> 
+        <i class="fas fa-minus info__accordion--minus" id="minus--5"></i>What is spatial design?</button>
+        <div class="info__accordion--FAQ collapse" id="faq--1">
+
+          <div class="info__accordion--FAQ-text">
+          As eloquently explained by Wikipedia: SHORT VERSION: “Spatial design is the glue that joins traditional 
+          built environment disciplines together with the people they are designed to serve’.“ EXTENDED VERSION: 
+          Spatial design is a relatively new conceptual design discipline that crosses the boundaries of traditional 
+          design specialisms such as architecture, landscape architecture, landscape design, interior design and service
+           design as well as certain areas of public art.  It focuses upon the flow of people between multiple areas 
+           of interior and exterior environments and delivers value and understanding in spaces across both the private 
+           and public realm. The emphasis of the discipline is upon working with people and space, particularly looking
+            at the notion of place, also place identity and genius loci. As such the discipline covers a variety of 
+            scales, from detailed design of interior spaces to large regional strategies and is largely found within the UK. 
+            As a discipline it uses the language of architecture, interior design and landscape architecture to communicate
+             design intentions. Spatial design uses research methods often found in disciplines such as product and 
+             service design, as well as social and historical methods that help with the identification and determination 
+             of place.  Ultimately it can be seen as ‘the glue that joins traditional built environment disciplines
+              together with the people they are designed to serve’.” 
+         </div>
+        </div>
+         <!--  FAQ 1 END -->
+         <!--  FAQ 2 START -->
+   <button class="info__accordion--btn info__accordion--btn-FAQ" id="button--6" data-target="#faq--2" data-toggle="collapse"> 
+        <i class="fas fa-plus info__accordion--plus" id="plus--6"> </i> 
+        <i class="fas fa-minus info__accordion--minus" id="minus--6"></i>How can you design without ever visiting my place</button>
+        
+        <div class="info__accordion--FAQ collapse" id="faq--2">
+
+          <div class="info__accordion--FAQ-text">
+          A so called ‘remote design’ is a well established method used, among other things, for architectural and design competitions. 
+          Project brief and all the necessary details about the site are provided by the client and the more detailed the information, 
+          the more comprehensive the final result. 
+          So, our clients will have to provide us with their brief, plans with clear measurement, images or videos of the space that
+           want to work on and reference or inspirational images which can help to establish clients’ design style
+         </div> 
+         </div> 
+
+         <!--  FAQ 2 END -->
+         <!--  FAQ 3 START -->
+   <button class="info__accordion--btn info__accordion--btn-FAQ" id="button--7" data-target="#faq--3" data-toggle="collapse"> 
+        <i class="fas fa-plus info__accordion--plus" id="plus--7"> </i>
+         <i class="fas fa-minus info__accordion--minus" id="minus--7"></i>What if I cannot provide images?</button>
+      
+         <div class="info__accordion--FAQ collapse" id="faq--3" >
+
+          <div class="info__accordion--FAQ-text">
+          If you cannot supply images of your space, do not worry – they do make our job easier but we can also work without them. 
+          Depending on the type of project, we might instruct you to provide additional details that would help us create a 
+          more comprehensive basis for your design. 
+         </div> 
+        </div>
+        <!--  FAQ 3 END -->
+
+      </div>
+       </div>
+     </div>
+     </div>
+
+
+  </div> <!-- accordions end -->
+  
+
+</section>
+<!-- info section end-->
+<!-- contact section start-->
+<section class="contact">
+  <div class="contact__title">
+    <h1 class="contact__title--h1">contact</h1>
+  </div>
+
+  <div class="contact__kontakt">
+
+  
+  <div class="contact__form">     
+      <form action="" method="POST">
+        <h4 class="contact__form--title"> Contact Us</h4>
+        <p class="contact__form--text"> We are here to answer any of your questions and/or provide you with an 
+          estimate. To contact simply fill a form below.</p>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <input type="text" class="form-control contact__form--name" id="name" name="name" placeholder="YOUR NAME" required>
+                </div>
+            </div>
+
+            <div class="col-md-12">
+                  <div class="form-group">
+                          <input type="email" name="email" class="form-control contact__form--email" id="email" placeholder="YOUR EMAIL"required>
+                  </div>
+            </div>
+  
+            </div>
+       
+        <div class="form-group">
+            <textarea  rows="12" cols="50" class="form-control contact__form--area" id="message" name="message" placeholder="YOUR MESSAGE"></textarea >
+        </div>
+        <div id="submit-btn">
+            <button class="customBtn customBtn__contact" title="text" role="button" type="submit">Send</button>
+        </div>
+    </form>
+  </div>
+
+
+  <div class="contact__social">
+     
+    <div class="contact__social--email">
+      <h4 class="contact__social--title">Email</h4>
+      <p class="contact__social--text">dadadad@ad3.com</p>
+    </div>
+    <div class="contact__social--phone">
+      <h4 class="contact__social--title">phone</h4>
+      <p class="contact__social--text">+44 0005558484848</p>
+    </div>
+    <div class="contact__social--adress">
+      <h4 class="contact__social--title">address</h4>
+      <p class="contact__social--text">23 Brilliant <br> Road London <br> WC1 3LH
+      </p>
+    </div>
+    <div class="contact__social--links">
+      <h4 class="contact__social--title">on the web</h4>
+      <div class="contact__social--links-icons">
+        <a href="#" class="contact__social--links-a"><i class="fab fa-pinterest contact__social--links-pine"></i></a>
+        <a href="#" class="contact__social--links-a"><i class="fab fa-instagram contact__social--links-insta"></i></a>
+      </div>
+      
+    </div>
+
+
+  </div>
+    
+</div>
+
+
+</section>
+<!-- contact section end-->
 
 
  <script src="js/jquery-3.4.1.min.js"></script>   

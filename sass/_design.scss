@@ -1,7 +1,7 @@
 .design {
 
     display: grid;
-    grid-template-rows: 10rem 15rem max-content 25rem max-content;
+    grid-template-rows: 10rem 15rem max-content 15rem max-content;
     grid-template-columns: repeat(12, 1fr);
 
     
@@ -15,7 +15,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        border-top: 10px solid $color-grey-light;
+       
 
         @media only screen and (max-width:$bp-small) {
  
@@ -58,23 +58,27 @@
     &__cards {
         grid-row: 3 / 4;
         grid-column: 1 / -1;
-        margin: 5rem 3rem 0rem 3rem;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        max-width: 200rem !important;
+        margin: 5rem auto;
    
    
     }
 
     &__card {
-        width: 30rem;
+        width: 33rem;
         border: 2px solid $color-grey-light;
         border-radius: 1rem;
         overflow: hidden;
         margin: 0 2rem;
         margin-bottom: 8rem;
 
-        @media only screen and (max-width:$bp-small-3) {
+        @media only screen and (max-width:$bp-small) {
+            width: 40rem;
+          } 
+        @media only screen and (max-width:$bp-small-4) {
             width: 35rem;
           } 
         &:hover {
@@ -92,7 +96,7 @@
     
         &--img {
             width: 100%;
-            padding:2rem;
+            padding:.5rem;
         }
 
         &--title {
@@ -122,7 +126,6 @@
         text-align: center;
         grid-row: 4 / 5;
         grid-column: 1 / -1;
-        margin-top: 5rem;
         align-self: center;
         
     }
@@ -134,18 +137,23 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        max-width: 200rem !important;
+        margin: 5rem auto;
 
 
     }
 
     &__popular {
-        width: 30rem;
+        width: 33rem;
         border: 2px solid $color-grey-light;
         border-radius: 1rem;
         overflow: hidden;
         margin: 0 2rem;
         margin-bottom: 8rem;
-        @media only screen and (max-width:$bp-small-3) {
+        @media only screen and (max-width:$bp-small) {
+          width: 40rem;
+        } 
+        @media only screen and (max-width:$bp-small-4) {
             width: 35rem;
           } 
 
@@ -222,7 +230,7 @@
             display: grid;
             grid-template-columns: 1fr 1fr;
             z-index: 100;
-
+            overflow-y: auto;
             @media only screen and (max-width:$bp-wide-2) {
                 width: 85%;
              }  
@@ -236,9 +244,11 @@
                width: 90%;
                
              } 
-             @media only screen  and (max-height:700px) and (max-width:$bp-wide-5) {
-               width: 95%;
-               padding: 1rem;
+             @media only screen  and (min-height:1100px){
+            height: 80vh;
+             } 
+             @media only screen  and (min-height:1200px){
+            height: 70vh;
              } 
 
              @media only screen and (max-width:$bp-small) {

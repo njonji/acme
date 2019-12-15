@@ -1,0 +1,309 @@
+.info {
+    height: auto;
+    margin: 10rem 0;
+
+
+    &__title {
+
+        width: 100%;
+        height: 10rem;
+        background: $color-title;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @media only screen and (max-width:$bp-small) {
+ 
+            background: transparent;
+            border-top: none;          
+           
+         }  
+        
+
+        &--h1 {
+            font-size: 3.5rem;
+            font-weight: 600;
+            color: $color-white;
+            text-transform: capitalize;
+            @media only screen and (max-width:$bp-small) {
+                color: rgba(92, 86, 78, .5);
+               
+             }  
+        }
+
+        &--span {
+            @media only screen and (max-width:$bp-small) {
+                display: none;
+               
+             }  
+        }
+    }
+
+    &__accordions {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        align-items: baseline;
+        flex-wrap: wrap;
+        margin: 5rem auto;
+        max-width: 85%;
+      
+    }
+
+    &__accordion {
+       display: flex;
+       flex-direction: column;
+
+       &--icon {
+           width: 8rem;
+           height: auto;
+       
+       }
+      
+
+
+        &--btn {
+            text-transform: uppercase;
+            text-decoration: none;
+            padding: .5rem .5rem;
+            display: inline-block;
+           font-size: 1.4rem;
+           text-decoration: none;
+           color: rgba(92, 86, 78, .5);
+           font-weight: 600;
+           letter-spacing: .2rem;
+            cursor: pointer;
+            transition: all .3s ease-in-out;
+            background: transparent;
+            border: 2px solid rgba(92, 86, 78, .5);
+            border-radius: 1rem;
+            width: 23rem;
+            position: relative;
+            z-index: 20;
+            margin: 2rem 3rem 2rem 3rem;
+
+            &,
+            &:link,
+            &:visited {
+                outline: none !important;
+            }
+
+            &-FAQ {
+                display: none;
+                animation-name: fadein;
+                animation-duration: .4s;
+                animation-timing-function: ease-in;
+                width: 45rem;
+                text-transform: none;
+                font-size: 1.3rem;
+                margin-bottom: 2rem;
+                z-index: 20;
+                background: $color-white;
+                margin: 0 0 2rem 0;
+
+
+                @media only screen and (max-width:$bp-wide-2) {
+                   width: 40rem;
+                  }
+               
+            }
+          
+          
+            &:hover {
+    
+                color: rgba(92, 86, 78, .8);
+                }
+        }
+
+        &--panel {
+            display: block;
+            color: rgba(92, 86, 78, .5);
+            text-align: justify;
+            width: 35rem;
+            padding: 2rem;
+            padding-top: 7rem;
+            border: 2px solid rgba(92, 86, 78, .5);
+            border-radius: 2rem;
+            font-size: 1.3rem;
+            font-weight: 600;
+            animation-name: fadein;
+            animation-duration: .4s;
+            animation-timing-function: ease-in; 
+            overflow: hidden;
+            background: $color-white;
+            z-index: 20;
+            
+         
+        }
+
+        &--FAQS{
+            height: auto;
+            position: absolute;
+            top: 15rem;
+            left: -9.5rem;
+            z-index: 20;
+            @media only screen and (max-width:$bp-wide-2) {
+                left: -6.5rem;
+               }
+        }
+
+        &--FAQ {
+      
+            color: rgba(92, 86, 78, .5);
+            text-align: justify;
+            width: 45rem;
+            border: 2px solid rgba(92, 86, 78, .5);
+            border-radius: 2rem;
+            font-size: 1.3rem;
+            font-weight: 600;
+            background: $color-white;
+            margin-bottom: 1rem;
+            padding: 0;
+            
+            @media only screen and (max-width:$bp-wide-2) {
+                width: 40rem;
+               }
+
+            &-text {
+                padding: 2rem;
+            }
+          
+        }
+
+        &--plus {
+           position: absolute;
+           top: 8px;
+           left: 6px;
+        }
+        &--minus {
+            position: absolute;
+            top: 8px;
+            left: 6px;
+        }
+    }
+
+}
+
+.acc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.acc--1 {
+    position: relative;
+
+}
+#panel--1 {
+    position: absolute;
+    top: 8rem;
+    left: -3rem;
+    display: none;
+}
+.acc--2 {
+    position: relative;
+}
+#panel--2 {
+    position: absolute;
+    top: 8rem;;
+    left: -3rem;
+    display: none;
+}
+.acc--3 {
+    position: relative;
+}
+#panel--3 {
+    position: absolute;
+    top: 8rem;
+    left: -3rem;
+    display: none;
+}
+.acc--4 {
+    position: relative;
+}
+/* #button--5 {
+    position: absolute;
+    top: 8rem;
+    left: -11rem;
+    width: 45rem;
+    text-transform: none;
+    font-size: 1.3rem;
+
+}
+#button--6 {
+    position: absolute;
+    top: 13rem;
+    left: -11rem;
+    width: 45rem;
+    text-transform: none;
+    font-size: 1.3rem;
+}
+#button--7 {
+    position: absolute;
+    top: 18rem;
+    left: -11rem;
+    width: 45rem;
+    text-transform: none;
+    font-size: 1.3rem;
+}
+
+
+#faq--1 {
+    position: absolute;
+    top: 12rem;
+    left: -11rem;
+}
+#faq--2 {
+    position: absolute;
+    top: 15rem;
+    left: -6rem;
+}
+#faq--3 {
+    position: absolute;
+    top: 20rem;
+    left: -6rem;
+} */
+
+
+
+
+
+#minus--1 {
+    display: none;
+}
+#minus--2 {
+    display: none;
+}
+#minus--3 {
+    display: none;
+}
+
+
+
+
+
+
+
+
+.panelActive {
+    display: block !important;
+}
+
+
+.zInd--100 {
+    z-index: 100;
+}
+.zInd--150 {
+    z-index: 150;
+}
+
+.plusClass {
+    display: none;
+}
+.minusClass {
+    display: inline-block !important;
+}
+
+.noBorder {
+    border: none;
+}

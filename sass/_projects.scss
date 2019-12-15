@@ -2,16 +2,58 @@
     margin-top: 5rem;
     height: max-content;
     
+    &__title {
+
+        width: 100%;
+        height: 10rem;
+        background: $color-title;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @media only screen and (max-width:$bp-small) {
+ 
+            background: transparent;
+            border-top: none;          
+           
+         }  
+        
+
+        &--h1 {
+            font-size: 3.5rem;
+            font-weight: 600;
+            color: $color-white;
+  
+            @media only screen and (max-width:$bp-small) {
+                color: $color-builders;
+               
+             }  
+        }
+
+        &--span {
+            display: none;
+            @media only screen and (max-width:$bp-small) {
+
+                display: inline-block;
+               
+             }  
+        }
     
+    }
 
     &__cards {
         width: 80%;
+        max-width: 152rem !important;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
         margin: 5rem auto;
 
+ 
+        @media only screen and (max-width:$bp-huge) {
+            max-width: 172rem !important;
+          } 
         @media only screen and (max-width:$bp-huge-2) {
             width: 90%;
           } 
@@ -22,7 +64,13 @@
         
         width: 40rem;
         overflow: hidden;
-        margin:0 2rem 8rem 2rem;
+        margin:0 2rem 4rem 2rem;
+
+     
+
+        @media only screen and (max-width:850px) {
+            width: 48rem;
+          } 
 
         @media only screen and (max-width:$bp-small-4) {
             width: 35rem;
@@ -54,6 +102,10 @@
             font-size: 1.2rem;
             font-weight: 600;
             text-align: justify;
+
+            @media only screen and (max-width:$bp-small) {
+               display: none;
+              } 
         }
     }
 }
