@@ -536,6 +536,9 @@ h1, h2, h3, h4, h5, h6 {
           top: 10%;
           padding: 2rem;
           overflow-y: auto; } }
+      @media only screen and (max-width: 42em) and (max-height: 700px) {
+        .services__popup--1 {
+          height: 80vh; } }
     .services__popup--2 {
       background: #C0D6C9; }
     .services__popup--3 {
