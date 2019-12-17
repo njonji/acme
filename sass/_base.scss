@@ -30,8 +30,7 @@ body {
     line-height: 1.6;
     color: #0000;
     overflow-x:hidden;
-
-
+ 
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -45,7 +44,9 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 
-
+.bodyFixed {
+    overflow: hidden !important;
+}
 
 /*  #preloader {
     background-color: rgba($color: #eeee, $alpha: 1);

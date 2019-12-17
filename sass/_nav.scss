@@ -7,8 +7,9 @@
     left: 0;
     width: 100%;
     transition:  all .5s;
-
- 
+    @media only screen and (max-width:$bp-large) {
+      opacity: 0;
+      }
 
     &__links {
          padding-right: 23rem;
@@ -28,7 +29,7 @@
 
     &--logo { 
       margin-left: 15rem;
-       width: 10rem;
+       width: 8rem;
        height: auto;
        @media only screen and (max-width:$bp-wide-3) {
         margin-left: 10rem;
@@ -130,5 +131,15 @@
   background-color: $color-white !important;
 }
 
+
+.maliNavNone {
+  @media only screen and (max-width:$bp-large) {
+    opacity: 1;
+    }
+}
+
+.noDisplayNav {
+  display: none;
+}
 
 

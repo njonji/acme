@@ -42,8 +42,8 @@
         margin: 8rem 0 5rem 0;
         grid-row: 2 / 3;
         grid-column: 1 / -1;
-        width: 40%;
-        font-size: 1.5rem;
+        width: 50%;
+        font-size: 1.8rem;
         text-align: justify;
         align-self: center;
         justify-self: center;
@@ -231,6 +231,7 @@
             grid-template-columns: 1fr 1fr;
             z-index: 100;
             overflow-y: auto;
+            max-width: 130rem;
 
 
             @media only screen and (max-height:1200px) {
@@ -246,10 +247,6 @@
                height: 95vh;
                width: 60%;
              } 
-             @media only screen  and (max-height:750px) and (max-width:$bp-wide-5) {
-               width: 90%;
-               
-             } 
 
 
              @media only screen and (max-width:$bp-small) {
@@ -257,9 +254,11 @@
                 width: 85%;
               } 
 
-  
               @media only screen and (max-height:800px) {
                 padding: 1rem;
+              }
+              @media only screen and (min-height:1000px) and (max-width:$bp-wide-5) {
+                height: 70vh;
               }
               @media only screen and (min-height:1000px) and (max-width:$bp-small) {
                 height: 80vh;
@@ -282,6 +281,7 @@
               @media only screen and (min-height:950px) and (max-width:$bp-small-3) {
                 height: 65vh;
               }
+    
        
   
 

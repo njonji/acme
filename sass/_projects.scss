@@ -42,8 +42,8 @@
     }
 
     &__cards {
-        width: 80%;
-        max-width: 152rem !important;
+        width: 95%;
+        max-width: 172rem !important;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -52,7 +52,8 @@
 
  
         @media only screen and (max-width:$bp-huge) {
-            max-width: 172rem !important;
+            width: 80%;
+            max-width: 152rem !important;
           } 
         @media only screen and (max-width:$bp-huge-2) {
             width: 90%;
@@ -62,11 +63,13 @@
 
     &__card {
         
-        width: 40rem;
+        width: 50rem;
         overflow: hidden;
         margin:0 2rem 4rem 2rem;
 
-     
+        @media only screen and (max-width:$bp-huge) {
+            width: 40rem;
+          } 
 
         @media only screen and (max-width:850px) {
             width: 48rem;
@@ -88,7 +91,7 @@
     
         &--img {
             width: 100%;
-            border-radius: 1rem;
+            border-radius: 1.5rem;
 
             @media only screen and (max-width:$bp-small-4) {
                 width: 35rem;

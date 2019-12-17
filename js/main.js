@@ -23,6 +23,8 @@ $(document).ready(function() {
     })
 })
 
+/* NO SCROLL WHEN MODAL IS OPEN */
+const body = document.querySelector("#body")
 
 /* 
 ADING TRANSPARENT BACKGROUND TO NAV */
@@ -45,8 +47,17 @@ toggler.addEventListener("click", e => {
     barTre.classList.toggle('barsWhite')
  
 })
-
-
+ /*  SHOWING NAV ON SCREEN */
+ function stickyNav() {
+    if(window.scrollY >= 50) {
+      navbar.classList.add("maliNavNone")
+        
+    } else {
+      navbar.classList.remove("maliNavNone")
+      
+    }
+}
+window.addEventListener("scroll", stickyNav);
 
 /* MAIN NAV LOGIC END*/
 
@@ -78,64 +89,79 @@ closeBtn.forEach(btn => btn.addEventListener('click', () => {
     archiPopup.style.display = 'none'
     devPopup.style.display = 'none'
     busiPopup.style.display = 'none'
+    body.classList.remove("bodyFixed")
 }))
 
 
 
 homeOwnerBtn.addEventListener('click', () => {
     homeOwnerPopup.style.display = 'block'
+    navbar.classList.toggle("noDisplayNav")
+    body.classList.add("bodyFixed")
+
 })
 
 homeOwnerPopup.addEventListener('click', e => {
     if(e.target === homeOwnerPopup )
     homeOwnerPopup.style.display = 'none'
+    body.classList.remove("bodyFixed")
 })
 
 
 
 buildersBtn .addEventListener('click', () => {
     buildersPopup.style.display = 'block'
+    body.classList.add("bodyFixed")
     
 })
 buildersPopup.addEventListener('click', e => {
     if(e.target === buildersPopup )
     buildersPopup.style.display = 'none'
+    body.classList.remove("bodyFixed")
 })
 
 
 carpetBtn .addEventListener('click', () => {
     carpetPopup.style.display = 'block'
+    body.classList.add("bodyFixed")
 })
 carpetPopup.addEventListener('click', e => {
     if(e.target === carpetPopup )
     carpetPopup.style.display = 'none'
+    body.classList.remove("bodyFixed")
 })
 
 
 archiBtn .addEventListener('click', () => {
     archiPopup.style.display = 'block'
+    body.classList.add("bodyFixed")
 })
 archiPopup.addEventListener('click', e => {
     if(e.target === archiPopup )
     archiPopup.style.display = 'none'
+    body.classList.remove("bodyFixed")
 })
 
 
 devBtn .addEventListener('click', () => {
     devPopup.style.display = 'block'
+    body.classList.add("bodyFixed")
 })
 devPopup.addEventListener('click', e => {
     if(e.target === devPopup )
     devPopup.style.display = 'none'
+    body.classList.remove("bodyFixed")
 })
 
 
 busiBtn.addEventListener('click', () => {
     busiPopup.style.display = 'block'
+    body.classList.add("bodyFixed")
 })
 busiPopup.addEventListener('click', e => {
     if(e.target === busiPopup )
     busiPopup.style.display = 'none'
+    body.classList.remove("bodyFixed")
 })
 /* POPUPS END */
 
@@ -146,19 +172,30 @@ const closeBtnModals = document.querySelectorAll('.design__wrapper--close');
 const twoDplan = document.querySelector('#twodplan');
 const twoDplanModal = document.querySelector('#twodplan--modal');
 
+const allServices = document.querySelectorAll(".designServices")
+const allWrappers = document.querySelectorAll('.design__wrapper');
+
+
+allServices.forEach(service => service.addEventListener('click', () => {
+    body.classList.add("bodyFixed")
+}))
+allWrappers.forEach(wrap => wrap.addEventListener('click', () => {
+    body.classList.remove("bodyFixed")
+}))
 closeBtnModals.forEach(btn => btn.addEventListener('click', () => {
     twoDplanModal.style.display = 'none'
-
+    body.classList.remove("bodyFixed")
 }))
 
 
 twoDplan.addEventListener('click', () => {
     twoDplanModal.style.display = 'block'
+   
 })
 
 twoDplanModal.addEventListener('click', e => {
     if(e.target === twoDplanModal )
-    twoDplanModal.style.display = 'none'
+    twoDplanModal.style.display = 'none' 
 })
 
 
@@ -311,8 +348,8 @@ startBtn.addEventListener('click', e => {
     startContent.forEach(start => {
         start.classList.toggle("activeFlex")
     })
-    briefPlus.classList.toggle("plusClass")
-    briefMinus.classList.toggle("minusClass")
+    startPlus.classList.toggle("plusClass")
+    startMinus.classList.toggle("minusClass")
 
 })
 
@@ -335,6 +372,7 @@ bespokeBtn.addEventListener('click', e => {
 
 /* about logic */
 
+const aboutText = document.querySelector('.about__text');
 const expand = document.querySelector('.about__text--expand');
 const expandText = document.querySelector('.about__text--info');
 
@@ -343,12 +381,19 @@ expand.addEventListener('click', e => {
     expandText.classList.add("displayText")
     e.target.style.display = "none"
  })
+expandText.addEventListener('click', e => {
+    e.preventDefault();
+ })
+ aboutText.addEventListener('click', e => {
+    e.preventDefault();
+ })
 /*  about logic end */
 
 
 
 
 
-function noscroll() {
-    window.scrollTo(0,0)
-}
+
+
+
+

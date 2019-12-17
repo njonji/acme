@@ -2,9 +2,6 @@
 
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
 
     &__title {
      
@@ -49,7 +46,7 @@
 
 
   &__text {
-    margin: 8rem 0 5rem 0;
+    margin: 8rem auto 5rem auto;
     width: 40%;
     font-size: 1.5rem;
     text-align: justify;
@@ -62,7 +59,7 @@
 
     @media only screen and (max-width:$bp-small) {
         width: 80%; 
-        margin: 0;
+        margin: 0 auto;
       }  
 
 

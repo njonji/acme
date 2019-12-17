@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,600|Roboto:300i,400,500&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.min.css" >
+    <link rel="stylesheet" href="css/style.css" >
+    <title>Acme3d</title>
+</head>
+<body>
+
+<div class="enq">
+
+<div class="enq__lijeva">
+
+    <form class="enq__form" action="" method="POST">
+        <h1 class="enq__form--title"> Spatial, Interior & Furniture Design</h1>
+        <p class="enq__form--text"> Client Information</p>
+        <div class="row">
+ 
+            <div class="col-md-12">
+                <label for="#email" class="enq__form--lables">Your E-Mail</label>
+                  <div class="form-group">
+                          <input type="email" name="email" class="form-control enq__form--email" id="email" placeholder="YOUR EMAIL"required>
+                  </div>
+            </div>
+            <div class="col-md-12">
+                <label for="#question" class="enq__form--lables">Enquire / Ask us a question</label>
+                <div class="form-group">
+                    <textarea  rows="4" cols="50" class="form-control enq__form--area" id="question" name="question" placeholder="YOUR MESSAGE"></textarea >
+                </div>
+            </div>
+            <div class="col-md-12">
+                <p class="enq__form--text"> If looking for a quote, please provide following details:</p>
+            </div>
+            <div class="col-md-12">
+                <label for="#briefForm" class="enq__form--lables">Brief:</label>
+                <div class="form-group">
+                    <textarea  rows="4" cols="50" class="form-control enq__form--area" id="briefForm" name="briefForm" placeholder="YOUR MESSAGE"></textarea >
+                </div>
+            </div>
+            <div class="col-md-12">
+                <label for="#plan" class="enq__form--lables">Existing plan with dimensions:</label>
+                <div class="form-group">
+                    <button type="button" name="plan" class="enq__form--btn" id="plan" > Add Files..</button>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <label for="#plan" class="enq__form--lables">Existing space images:</label>
+                <div class="form-group">
+                    <button type="button" name="space" class="enq__form--btn" id="space" >Add Files..</button>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <label for="#reff" class="enq__form--lables">Reference images:</label>
+                <div class="form-group">
+                    <button type="button" name="reff" class=" enq__form--btn" id="reff" > Add Files.. </button>
+                </div>
+            </div>
+            </div>
+
+        <div id="submit-btn">
+            <button class="customBtn customBtn__enq" title="text" role="button" type="submit">Send</button>
+        </div>
+    </form>
+
+</div>
+<div class="enq__desna">
+    <div class="enq__board">
+        <div class="enq__board--top">
+            <h1 class="enq__board--title">Concept Board</h1>
+            <p class="enq__board--price">from: 150 </p>
+            <img src="/img/design/2D-Plan.png" alt="2D-Plan" class="enq__board--img">
+        </div>
+        <div class="eng__board--bottom">
+            <h2 class="enq__board--title2">Brief Guidline</h2>
+             <ul class="enq__board--ul">
+                <li class="enq__board--li">residential, commerical, furniture or other</li> 
+                <li class="enq__board--li">your wish list</li> 
+                <li class="enq__board--li">what is the problem and what are you hoping to accomplish</li> 
+                <li class="enq__board--li">function:how will the space/furniture be used</li> 
+                <li class="enq__board--li">who is or who .....</li> 
+                <li class="enq__board--li">restrictions and limits</li> 
+                <li class="enq__board--li">your likes and dislikes ....</li> 
+                <li class="enq__board--li">ay other info you might ....</li> 
+             </ul>
+
+             <p class="enq__board--info">If you cannot provide images of existing space - do not worry. <br>They make our job easier but we
+                 can often (not always) work without them. Reference images show us what you like and provide desiqn style direction.
+             </p>
+        </div>
+    
+
+    </div>
+</div>
+
+
+</div>
+
+
+ <script src="js/jquery-3.4.1.min.js"></script>   
+ <script src="js/bootstrap.min.js"></script>   
+ 
+</body>
+</html>
