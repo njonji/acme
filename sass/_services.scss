@@ -695,13 +695,14 @@
     position: fixed;
     top:0;
     left:0;
-    width: 100%;
+    width: 50%;
     height: 100%;
     display: none;
     animation-name: fadein;
     animation-duration: .4s;
     animation-timing-function: ease-in;
-      z-index: 9999;
+    z-index: 9999;
+    padding-right: 0!important;
 }
 
 .fade {

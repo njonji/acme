@@ -119,6 +119,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 2rem auto; }
 
 .navbar {
+  padding: 0;
   background: #fff;
   z-index: 9999;
   position: fixed;
@@ -915,13 +916,14 @@ h1, h2, h3, h4, h5, h6 {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 50%;
   height: 100%;
   display: none;
   animation-name: fadein;
   animation-duration: .4s;
   animation-timing-function: ease-in;
-  z-index: 9999; }
+  z-index: 9999;
+  padding-right: 0 !important; }
 
 .fade {
   animation-name: fadeOut;

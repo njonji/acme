@@ -90,7 +90,6 @@ closeBtn.forEach(btn => btn.addEventListener('click', () => {
     archiPopup.style.display = 'none'
     devPopup.style.display = 'none'
     busiPopup.style.display = 'none'
-    body.classList.remove("bodyFixed")
     navbar.classList.remove("noDisplayNav")
 }))
 
@@ -99,14 +98,13 @@ closeBtn.forEach(btn => btn.addEventListener('click', () => {
 homeOwnerBtn.addEventListener('click', () => {
     homeOwnerPopup.style.display = 'block'
     navbar.classList.add("noDisplayNav")
-    body.classList.add("bodyFixed")
+  
 
 })
 
 homeOwnerPopup.addEventListener('click', e => {
     if(e.target === homeOwnerPopup )
     homeOwnerPopup.style.display = 'none'
-    body.classList.remove("bodyFixed")
     navbar.classList.remove("noDisplayNav")
 })
 
@@ -115,13 +113,11 @@ homeOwnerPopup.addEventListener('click', e => {
 buildersBtn .addEventListener('click', () => {
     buildersPopup.style.display = 'block'
     navbar.classList.add("noDisplayNav")
-    body.classList.add("bodyFixed")
     
 })
 buildersPopup.addEventListener('click', e => {
     if(e.target === buildersPopup )
     buildersPopup.style.display = 'none'
-    body.classList.remove("bodyFixed")
     navbar.classList.remove("noDisplayNav")
 })
 
@@ -129,13 +125,11 @@ buildersPopup.addEventListener('click', e => {
 carpetBtn .addEventListener('click', () => {
     carpetPopup.style.display = 'block'
     navbar.classList.add("noDisplayNav")
-    body.classList.add("bodyFixed")
 })
 carpetPopup.addEventListener('click', e => {
     if(e.target === carpetPopup )
     carpetPopup.style.display = 'none'
     navbar.classList.add("noDisplayNav")
-    body.classList.remove("bodyFixed")
     navbar.classList.remove("noDisplayNav")
 })
 
@@ -143,12 +137,10 @@ carpetPopup.addEventListener('click', e => {
 archiBtn .addEventListener('click', () => {
     archiPopup.style.display = 'block'
     navbar.classList.add("noDisplayNav")
-    body.classList.add("bodyFixed")
 })
 archiPopup.addEventListener('click', e => {
     if(e.target === archiPopup )
     archiPopup.style.display = 'none'
-    body.classList.remove("bodyFixed")
     navbar.classList.remove("noDisplayNav")
 })
 
@@ -156,12 +148,10 @@ archiPopup.addEventListener('click', e => {
 devBtn .addEventListener('click', () => {
     devPopup.style.display = 'block'
     navbar.classList.add("noDisplayNav")
-    body.classList.add("bodyFixed")
 })
 devPopup.addEventListener('click', e => {
     if(e.target === devPopup )
     devPopup.style.display = 'none'
-    body.classList.remove("bodyFixed")
     navbar.classList.remove("noDisplayNav")
 })
 
@@ -169,12 +159,10 @@ devPopup.addEventListener('click', e => {
 busiBtn.addEventListener('click', () => {
     busiPopup.style.display = 'block'
     navbar.classList.add("noDisplayNav")
-    body.classList.add("bodyFixed")
 })
 busiPopup.addEventListener('click', e => {
     if(e.target === busiPopup )
     busiPopup.style.display = 'none'
-    body.classList.remove("bodyFixed")
     navbar.classList.remove("noDisplayNav")
 })
 /* POPUPS END */
@@ -191,16 +179,13 @@ const allWrappers = document.querySelectorAll('.design__wrapper');
 
 
 allServices.forEach(service => service.addEventListener('click', () => {
-    body.classList.add("bodyFixed")
     navbar.classList.add("noDisplayNav")
 }))
 allWrappers.forEach(wrap => wrap.addEventListener('click', () => {
-    body.classList.remove("bodyFixed")
     navbar.classList.remove("noDisplayNav")
 }))
 closeBtnModals.forEach(btn => btn.addEventListener('click', () => {
     twoDplanModal.style.display = 'none'
-    body.classList.remove("bodyFixed")
     navbar.classList.remove("noDisplayNav")
 }))
 
