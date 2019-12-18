@@ -1,3 +1,4 @@
+
 /* MAIN NAV LOGIC */
 var scroll = $(document).scrollTop();
 var navHeight = $('.navbar').outerHeight();

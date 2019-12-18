@@ -295,7 +295,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .homeslide {
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   margin: 0;
   padding: 0; }
   .homeslide__image {
@@ -1117,16 +1117,25 @@ h1, h2, h3, h4, h5, h6 {
     max-width: 130rem; }
     @media only screen and (max-width: 86.5em) {
       .design__prozor {
-        width: 85%; } }
+        width: 80%; } }
     @media only screen and (max-width: 66.3em) {
       .design__prozor {
         grid-template-rows: 1fr 1fr;
         height: 95vh;
-        width: 60%; } }
+        width: 50rem; } }
     @media only screen and (max-width: 42em) {
       .design__prozor {
         padding: 2rem;
-        width: 85%; } }
+        width: 65%; } }
+    @media only screen and (max-width: 36em) {
+      .design__prozor {
+        width: 70%; } }
+    @media only screen and (max-width: 30em) {
+      .design__prozor {
+        width: 75%; } }
+    @media only screen and (max-width: 25.5em) {
+      .design__prozor {
+        width: 80%; } }
     @media only screen and (max-height: 570px) {
       .design__prozor {
         padding: 2rem 0; } }
