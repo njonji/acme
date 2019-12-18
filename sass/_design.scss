@@ -254,9 +254,14 @@
                 width: 85%;
               } 
 
-              @media only screen and (max-height:800px) {
+             @media only screen and (max-height:570px) {
+                padding: 2rem 0;
+         
+              } 
+             @media only screen and (max-height:800px) {
                 padding: 1rem;
-              }
+         
+              } 
               @media only screen and (min-height:1000px) and (max-width:$bp-wide-5) {
                 height: 70vh;
               }
@@ -270,7 +275,7 @@
                 height: 60vh;
               }
               @media only screen and (min-height:700px) and (max-width:$bp-small-3) {
-                height: 85vh;
+                height: 90rem;
               }
               @media only screen and (min-height:750px) and (max-width:$bp-small-3) {
                 height: 75vh;
@@ -299,6 +304,10 @@
                 @media only screen and (max-width:$bp-wide-5) {
                     grid-row: 2 / -1;
                     grid-column: 1 /-1;
+                  } 
+                  @media only screen and (max-height:570px) {
+                    padding: 2rem 0;
+             
                   } 
             }
 

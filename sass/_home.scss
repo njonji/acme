@@ -88,6 +88,11 @@
  margin: 0;
  padding:0;
 
+         &__image {
+            width: 16rem;
+            height: auto;
+         }
+
 
         &__title {
             color:$color-white;
@@ -99,27 +104,8 @@
             flex-direction: column;
             justify-content: center;
             align-content: center;
-             margin-top: 30rem;
              padding-top: 2rem;
 
-             @media only screen and (max-width:$bp-large) and (min-height:900px) {
-                margin-top: 40rem;
-              }
-             @media only screen and (max-width:$bp-large) and (min-height:1000px) {
-                margin-top: 50rem;
-              }
-             @media only screen and (max-width:$bp-small){
-                margin-top: 25rem;
-              }
-
-              @media only screen and (max-height:600px) {
-                 margin-top: 15rem;
-           
-              }
-              @media only screen and (max-height:550px) {
-                 margin-top: 10rem;
-           
-              }
               @media only screen and (max-height:450px) {
                 
                  font-size: 2.7rem;
@@ -200,7 +186,7 @@
         
         background:linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)),url("/img/home/home3.png")center/cover no-repeat;
         @media only screen and (max-width:$bp-small){
-            background:linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)),url("/img/home/home3XS.png")left center/cover no-repeat;
+            background:linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)),url("/img/home/home3XS.png")center/cover no-repeat;
           }
  }
     &--3 {
