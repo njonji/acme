@@ -296,9 +296,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .homeslide {
   height: 100vh;
-  width: 100%;
+  width: 99%;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  overflow: hidden; }
   .homeslide__image {
     width: 16rem;
     height: auto; }
@@ -373,14 +374,26 @@ h1, h2, h3, h4, h5, h6 {
     @media only screen and (max-width: 42em) {
       .homeslide--2 {
         background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/img/home/home3XS.png") center/cover no-repeat; } }
+    @media only screen and (max-width: 42em) {
+      .homeslide--2 {
+        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/img/home/home3XXS.png") center/cover no-repeat; } }
   .homeslide--3 {
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/img/home/home2.png") center/cover no-repeat; }
 
-.carousel--home {
+.sliderHompage {
+  overflow: hidden;
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
   display: none; }
   @media only screen and (max-width: 61.75em) {
-    .carousel--home {
-      display: block; } }
+    .sliderHompage {
+      display: block;
+      overflow: hidden; } }
+
+.displayNone {
+  display: none; }
 
 .services {
   margin-top: 15rem;
@@ -805,8 +818,7 @@ h1, h2, h3, h4, h5, h6 {
       animation-name: fadein;
       animation-duration: .4s;
       animation-timing-function: ease-in;
-      position: relative;
-      z-index: 1; }
+      position: relative; }
       @media only screen and (max-width: 50em) {
         .services__card--title {
           font-size: 2.3rem; } }

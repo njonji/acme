@@ -60,6 +60,18 @@ toggler.addEventListener("click", e => {
 }
 window.addEventListener("scroll", stickyNav);
 
+const car = document.querySelector("#carouselIndicators");
+
+ function stopCarousel() {
+    if(window.scrollY >= 600) {
+      car.classList.add("displayNone")
+        
+    } else {
+        car.classList.remove("displayNone")
+    }
+}
+window.addEventListener("scroll", stopCarousel);
+
 /* MAIN NAV LOGIC END*/
 
 
