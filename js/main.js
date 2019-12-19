@@ -63,7 +63,7 @@ window.addEventListener("scroll", stickyNav);
 const car = document.querySelector("#carouselIndicators");
 
  function stopCarousel() {
-    if(window.scrollY >= 600) {
+    if(window.scrollY >= 1000) {
       car.classList.add("displayNone")
         
     } else {
