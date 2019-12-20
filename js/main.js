@@ -95,6 +95,7 @@ closeBtn.forEach(btn => btn.addEventListener('click', () => {
     devPopup.style.display = 'none'
     busiPopup.style.display = 'none'
     navbar.classList.remove("noDisplayNav")
+    body.classList.remove("bodyFixed")
 }))
 
 
@@ -102,7 +103,7 @@ closeBtn.forEach(btn => btn.addEventListener('click', () => {
 homeOwnerBtn.addEventListener('click', () => {
     homeOwnerPopup.style.display = 'block'
     navbar.classList.add("noDisplayNav")
-  
+    body.classList.add("bodyFixed")
 
 })
 
@@ -110,6 +111,7 @@ homeOwnerPopup.addEventListener('click', e => {
     if(e.target === homeOwnerPopup )
     homeOwnerPopup.style.display = 'none'
     navbar.classList.remove("noDisplayNav")
+    body.classList.remove("bodyFixed")
 })
 
 
@@ -117,57 +119,70 @@ homeOwnerPopup.addEventListener('click', e => {
 buildersBtn .addEventListener('click', () => {
     buildersPopup.style.display = 'block'
     navbar.classList.add("noDisplayNav")
+    body.classList.add("bodyFixed")
     
 })
 buildersPopup.addEventListener('click', e => {
     if(e.target === buildersPopup )
     buildersPopup.style.display = 'none'
     navbar.classList.remove("noDisplayNav")
+    body.classList.remove("bodyFixed")
 })
 
 
 carpetBtn .addEventListener('click', () => {
     carpetPopup.style.display = 'block'
     navbar.classList.add("noDisplayNav")
+    body.classList.add("bodyFixed")
 })
 carpetPopup.addEventListener('click', e => {
     if(e.target === carpetPopup )
     carpetPopup.style.display = 'none'
     navbar.classList.add("noDisplayNav")
     navbar.classList.remove("noDisplayNav")
+    body.classList.remove("bodyFixed")
 })
 
 
 archiBtn .addEventListener('click', () => {
     archiPopup.style.display = 'block'
     navbar.classList.add("noDisplayNav")
+    body.classList.add("bodyFixed")
 })
 archiPopup.addEventListener('click', e => {
     if(e.target === archiPopup )
     archiPopup.style.display = 'none'
     navbar.classList.remove("noDisplayNav")
+    body.classList.remove("bodyFixed")
+    
 })
 
 
 devBtn .addEventListener('click', () => {
     devPopup.style.display = 'block'
     navbar.classList.add("noDisplayNav")
+    body.classList.add("bodyFixed")
 })
 devPopup.addEventListener('click', e => {
     if(e.target === devPopup )
     devPopup.style.display = 'none'
     navbar.classList.remove("noDisplayNav")
+    body.classList.remove("bodyFixed")
+
 })
 
 
 busiBtn.addEventListener('click', () => {
     busiPopup.style.display = 'block'
     navbar.classList.add("noDisplayNav")
+    body.classList.add("bodyFixed")
 })
 busiPopup.addEventListener('click', e => {
     if(e.target === busiPopup )
     busiPopup.style.display = 'none'
     navbar.classList.remove("noDisplayNav")
+    body.classList.remove("bodyFixed")
+
 })
 /* POPUPS END */
 
@@ -196,12 +211,14 @@ closeBtnModals.forEach(btn => btn.addEventListener('click', () => {
 
 twoDplan.addEventListener('click', () => {
     twoDplanModal.style.display = 'block'
+    body.classList.add("bodyFixed")
    
 })
 
 twoDplanModal.addEventListener('click', e => {
     if(e.target === twoDplanModal )
     twoDplanModal.style.display = 'none' 
+    body.classList.remove("bodyFixed")
 })
 
 
