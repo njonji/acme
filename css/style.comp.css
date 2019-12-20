@@ -60,6 +60,9 @@ h1, h2, h3, h4, h5, h6 {
 .bodyFixed {
   overflow: hidden;
   margin-right: 17px; }
+  @media only screen and (max-width: 61.75em) {
+    .bodyFixed {
+      margin-right: 0; } }
 
 /*  #preloader {
     background-color: rgba($color: #eeee, $alpha: 1);
