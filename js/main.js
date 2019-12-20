@@ -270,11 +270,22 @@ const accBtnFor = document.querySelector('#button--4');
 const plusFor = document.querySelector('#plus--4');
 const minusFor = document.querySelector('#minus--4');
 
+const faqPlus = document.querySelectorAll(".plus")
+const faqMinus = document.querySelectorAll(".minus")
+
 accBtnFor.addEventListener('click', () => {
     plusFor.classList.toggle("plusClass")
     minusFor.classList.toggle("minusClass")
     faqs.forEach(faq => {
         faq.classList.toggle("panelActive")
+    })
+    faqPlus.forEach(plus => {
+        plus.classList.remove("plusClass")
+    })
+    faqMinus.forEach(minus => {
+        if(minus.classList.contains("minusClass")) {
+            minus.classList.toggle("minusClass")
+        }
     })
     faqs.forEach(faq => {
         faq.classList.toggle("collapsed")

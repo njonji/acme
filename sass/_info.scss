@@ -77,7 +77,7 @@
             background: transparent;
             border: 2px solid rgba(92, 86, 78, .5);
             border-radius: 1rem;
-            width: 23rem;
+            width: 25rem;
             position: relative;
             z-index: 20;
             margin: 2rem 3rem 2rem 3rem;
@@ -106,7 +106,7 @@
                 animation-name: fadein;
                 animation-duration: .4s;
                 animation-timing-function: ease-in;
-                width: 45rem;
+                width: 46rem;
                 text-transform: none;
                 font-size: 1.3rem;
                 margin-bottom: 2rem;
@@ -114,10 +114,16 @@
                 background: $color-white;
                 margin: 0 0 2rem 0;
 
-
-                @media only screen and (max-width:$bp-wide-2) {
-                   width: 40rem;
-                  }
+                @media only screen and (max-width:$bp-small) {
+                    width: 36rem;
+                   }
+                   @media only screen and (max-width:618px) {
+                    width: 46rem;
+                   }
+                   @media only screen and (max-width:$bp-small-4) {
+                    width: 35rem;
+                   }
+             
                
             }
           
@@ -158,13 +164,22 @@
             @media only screen and (max-width:$bp-wide-2) {
                 left: -6.5rem;
                }
+            @media only screen and (max-width:$bp-medium) {
+                left: -9.5rem;
+               }
+            @media only screen and (max-width:$bp-small) {
+                left: -8rem;
+               }
+               @media only screen and (max-width:$bp-small-4) {
+                left: -2.6rem;
+               }
         }
 
         &--FAQ {
       
             color: rgba(92, 86, 78, .5);
             text-align: justify;
-            width: 45rem;
+            width: 46rem;
             border: 2px solid rgba(92, 86, 78, .5);
             border-radius: 2rem;
             font-size: 1.3rem;
@@ -172,10 +187,16 @@
             background: $color-white;
             margin-bottom: 1rem;
             padding: 0;
-            
-            @media only screen and (max-width:$bp-wide-2) {
-                width: 40rem;
+            @media only screen and (max-width:$bp-small) {
+                width: 36rem;
                }
+            @media only screen and (max-width:618px) {
+                width: 46rem;
+               }
+               @media only screen and (max-width:$bp-small-4) {
+                width: 35rem;
+               }
+        
 
             &-text {
                 padding: 2rem;
@@ -327,4 +348,8 @@
 
 .noBorder {
     border: none;
+}
+
+#button--6 {
+    padding: .5rem 2rem;
 }
