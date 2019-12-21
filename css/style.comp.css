@@ -1862,7 +1862,8 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
   @media only screen and (max-width: 66.3em) {
     .enq {
-      height: auto; } }
+      height: auto;
+      margin: 1rem; } }
   .enq__lijeva {
     grid-row: 1 / -1;
     grid-column: 1 / 2;
