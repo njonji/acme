@@ -8,11 +8,30 @@
     border: 2px solid $color-text-services;
     border-radius: 1rem;
     box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
-    
+    position: relative;
     @media only screen and (max-width:$bp-wide-5) {
        height: auto;    
-       margin:1rem;
+       margin:0;
      }  
+
+     &__home {
+         position: absolute;
+         top: 1rem;
+         left: 2rem;
+         font-size: 1.8rem;
+         color: $color-text-services;
+         text-transform: capitalize;
+     
+
+         &:hover {
+             text-decoration: none;
+             color: $color-text-services;
+             font-weight: bold;
+         }
+         &--icon {
+             margin-right: .5rem;
+         }
+     }
 
 
     &__lijeva {
