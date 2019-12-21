@@ -275,10 +275,10 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: center; }
     @media only screen and (max-width: 80em) {
       .home__images {
-        height: 50rem; } }
+        height: 45rem; } }
     @media only screen and (max-width: 66.3em) {
       .home__images {
-        height: 40rem; } }
+        height: 35rem; } }
     @media only screen and (max-height: 800px) {
       .home__images {
         height: 30rem;
@@ -1143,6 +1143,9 @@ h1, h2, h3, h4, h5, h6 {
     @media only screen and (max-width: 86.5em) {
       .design__prozor {
         width: 80%; } }
+    @media only screen and (max-width: 75em) {
+      .design__prozor {
+        width: 90%; } }
     @media only screen and (max-width: 66.3em) {
       .design__prozor {
         grid-template-rows: 1fr 1fr;

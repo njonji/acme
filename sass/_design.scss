@@ -238,6 +238,9 @@
                 width: 80%;
              }  
 
+             @media only screen and (max-width:$bp-wide-4) {
+              width: 90%;
+             } 
              @media only screen and (max-width:$bp-wide-5) {
                grid-template-rows: 1fr 1fr;
                height: 95vh;
