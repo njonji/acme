@@ -1,18 +1,28 @@
 .enq {
-    widows: 98vw;
+    width: 98vw;
     height: 97vh;
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
-    margin:1rem;
+    margin:1rem 1rem 1rem 2rem;
     border: 2px solid $color-text-services;
     border-radius: 1rem;
     box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+    
+    @media only screen and (max-width:$bp-wide-5) {
+       height: auto;    
+     }  
+
 
     &__lijeva {
         grid-row: 1 / -1;
         grid-column: 1 / 2;
         display: grid;
+
+        @media only screen and (max-width:$bp-wide-5) {
+            grid-row: 1 / 2; 
+            grid-column: 1 / -1;      
+         }  
 
     }
 
@@ -20,15 +30,21 @@
         grid-row: 1 / -1;
         grid-column: 2 / 3;
         display: grid;
+        @media only screen and (max-width:$bp-wide-5) {
+            grid-row: 2 / -1; 
+            grid-column: 1 / -1;      
+         }  
     
     }
 
     &__form {
         padding: 5rem;
-        margin: 2rem 2rem;
+        margin: 2rem 2.5rem;
         align-self: center;
         justify-self: center;
-
+        @media only screen and (max-width:$bp-wide-5) {
+            margin:0;
+         }  
         &--title {
             color: $color-text-services;
             font-weight: 600;
@@ -62,6 +78,12 @@
         align-self: center;
         background: $color-grey-light;
         border-radius: 1rem;
+
+        @media only screen and (max-width:$bp-wide-5) {
+            margin: 0;
+        
+         }  
+    
      
        
         &--top {
@@ -110,6 +132,7 @@
             font-size: 1.6rem;
             font-weight: 600;
             margin: 4rem 0;
+
         }
    
     }

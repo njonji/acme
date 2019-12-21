@@ -187,17 +187,25 @@
  }
     &--2 {
         
-        background:linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)),url("/img/home/home3.png")center/cover no-repeat;
+        background:linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)),url("/img/home/home3.png")left center/cover no-repeat;
+
         @media only screen and (max-width:$bp-small){
-            background:linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)),url("/img/home/home3XS.png")center/cover no-repeat;
+            background:linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)),url("/img/home/slide2tab.png")center/cover no-repeat;
           }
-        @media only screen and (max-width:$bp-small){
-            background:linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)),url("/img/home/home3XXS.png")center/cover no-repeat;
+        @media only screen and (max-width:$bp-small-3){
+            background:linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)),url("/img/home/slide2XS.png")center/cover no-repeat;
           }
  }
     &--3 {
         
         background:linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)),url("/img/home/home2.png")center/cover no-repeat;
+        @media only screen and (max-width:$bp-small){
+            background:linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)),url("/img/home/slide3tab.png")center/cover no-repeat;
+          }
+ 
+        @media only screen and (max-width:$bp-small-3){
+            background:linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)),url("/img/home/slide3XS.png")center/cover no-repeat;
+          }
  }
 }
 

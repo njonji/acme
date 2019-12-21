@@ -1,3 +1,12 @@
+
+ /* PRELOADER */
+ $(window).on("load", function() {
+    $("#status").fadeOut();
+    $("#preloader").fadeOut();
+})
+
+
+
 /* SMOOTH SCROLL*/
 jQuery(document).ready(function () {
     

@@ -53,7 +53,7 @@ h1,h2,h3,h4,h5,h6 {
      }  
 }
 
-/*  #preloader {
+#preloader {
     background-color: rgba($color: #eeee, $alpha: 1);
     position: fixed;
     top:0;
@@ -63,18 +63,17 @@ h1,h2,h3,h4,h5,h6 {
     z-index: 200;
 }
 #status {
-    background-image: url(/preloader.svg);
+    background-image: url(/img/preloader.svg);
     background-repeat: no-repeat;
     width: 25rem;
     height: 25rem;
     position: absolute;
     left: 50%;
     top:50%;
-    margin-left: -8.5rem;
-    margin-top: -12.5rem; 
+    transform: translate(-50%, -50%);
    
  } 
 
 .hiddenLoader {
     animation: fadeOut 1s;
-} */
+}

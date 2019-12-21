@@ -64,31 +64,28 @@ h1, h2, h3, h4, h5, h6 {
     .bodyFixed {
       margin-right: 0; } }
 
-/*  #preloader {
-    background-color: rgba($color: #eeee, $alpha: 1);
-    position: fixed;
-    top:0;
-    bottom: 0;
-    left:0;
-    right: 0;
-    z-index: 200;
-}
+#preloader {
+  background-color: #eeeeee;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 200; }
+
 #status {
-    background-image: url(/preloader.svg);
-    background-repeat: no-repeat;
-    width: 25rem;
-    height: 25rem;
-    position: absolute;
-    left: 50%;
-    top:50%;
-    margin-left: -8.5rem;
-    margin-top: -12.5rem; 
-   
- } 
+  background-image: url(/img/preloader.svg);
+  background-repeat: no-repeat;
+  width: 25rem;
+  height: 25rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); }
 
 .hiddenLoader {
-    animation: fadeOut 1s;
-} */
+  animation: fadeOut 1s; }
+
 .customBtn, .customBtn:link, .customBtn:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -378,15 +375,21 @@ h1, h2, h3, h4, h5, h6 {
   .homeslide--1 {
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/img/home/home1.png") right center/cover no-repeat; }
   .homeslide--2 {
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/img/home/home3.png") center/cover no-repeat; }
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/img/home/home3.png") left center/cover no-repeat; }
     @media only screen and (max-width: 42em) {
       .homeslide--2 {
-        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/img/home/home3XS.png") center/cover no-repeat; } }
-    @media only screen and (max-width: 42em) {
+        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/img/home/slide2tab.png") center/cover no-repeat; } }
+    @media only screen and (max-width: 30em) {
       .homeslide--2 {
-        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/img/home/home3XXS.png") center/cover no-repeat; } }
+        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/img/home/slide2XS.png") center/cover no-repeat; } }
   .homeslide--3 {
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/img/home/home2.png") center/cover no-repeat; }
+    @media only screen and (max-width: 42em) {
+      .homeslide--3 {
+        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/img/home/slide3tab.png") center/cover no-repeat; } }
+    @media only screen and (max-width: 30em) {
+      .homeslide--3 {
+        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/img/home/slide3XS.png") center/cover no-repeat; } }
 
 .sliderHompage {
   overflow: hidden;
@@ -1848,28 +1851,42 @@ h1, h2, h3, h4, h5, h6 {
         color: #833ab4; }
 
 .enq {
-  widows: 98vw;
+  width: 98vw;
   height: 97vh;
   display: grid;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
-  margin: 1rem;
+  margin: 1rem 1rem 1rem 2rem;
   border: 2px solid #5C564E;
   border-radius: 1rem;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+  @media only screen and (max-width: 66.3em) {
+    .enq {
+      height: auto; } }
   .enq__lijeva {
     grid-row: 1 / -1;
     grid-column: 1 / 2;
     display: grid; }
+    @media only screen and (max-width: 66.3em) {
+      .enq__lijeva {
+        grid-row: 1 / 2;
+        grid-column: 1 / -1; } }
   .enq__desna {
     grid-row: 1 / -1;
     grid-column: 2 / 3;
     display: grid; }
+    @media only screen and (max-width: 66.3em) {
+      .enq__desna {
+        grid-row: 2 / -1;
+        grid-column: 1 / -1; } }
   .enq__form {
     padding: 5rem;
-    margin: 2rem 2rem;
+    margin: 2rem 2.5rem;
     align-self: center;
     justify-self: center; }
+    @media only screen and (max-width: 66.3em) {
+      .enq__form {
+        margin: 0; } }
     .enq__form--title {
       color: #5C564E;
       font-weight: 600;
@@ -1896,6 +1913,9 @@ h1, h2, h3, h4, h5, h6 {
     align-self: center;
     background: #e4e4e4;
     border-radius: 1rem; }
+    @media only screen and (max-width: 66.3em) {
+      .enq__board {
+        margin: 0; } }
     .enq__board--top {
       display: grid; }
     .enq__board--title {
