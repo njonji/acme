@@ -1859,11 +1859,27 @@ h1, h2, h3, h4, h5, h6 {
   margin: 1rem 1rem 1rem 2rem;
   border: 2px solid #5C564E;
   border-radius: 1rem;
-  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  position: relative; }
   @media only screen and (max-width: 66.3em) {
     .enq {
       height: auto;
-      margin: 1rem; } }
+      margin: 0;
+      border: none;
+      border-radius: none; } }
+  .enq__home {
+    position: absolute;
+    top: 1rem;
+    left: 2rem;
+    font-size: 1.8rem;
+    color: #5C564E;
+    text-transform: capitalize; }
+    .enq__home:hover {
+      text-decoration: none;
+      color: #5C564E;
+      font-weight: bold; }
+    .enq__home--icon {
+      margin-right: .5rem; }
   .enq__lijeva {
     grid-row: 1 / -1;
     grid-column: 1 / 2;
