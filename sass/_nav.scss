@@ -68,6 +68,19 @@
     display: inline-block;
     transition: all .3s linear;
     font-size: 1.7rem;
+
+    &__transparent {
+      color: white;
+      @media only screen and (max-width:$bp-large) {
+        color: $color-text !important;
+        }
+    }
+
+    &__black {
+      color: $color-text;
+    }
+
+
     @media only screen and (max-width:$bp-wide-3) {
       font-size: 1.5rem;
    }
@@ -121,9 +134,11 @@
 
 .animate {
   transform: translateY(-100%);
+  background-color: $color-white !important;
 }
 .sticky {
   transform: translateY(0);
+
 }
 
 .transparentNav {
@@ -146,5 +161,12 @@
 .noDisplayNav {
   display: none;
 }
+.navbar-transparent {
+  background: transparent;
+  @media only screen and (max-width:$bp-large) {
+    background: $color-white;
+    }
+}
+
 
 

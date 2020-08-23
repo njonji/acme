@@ -125,21 +125,23 @@ closeBtn.forEach(btn => btn.addEventListener('click', () => {
 }))
 
 
-
+if(homeOwnerBtn) {
 homeOwnerBtn.addEventListener('click', () => {
     homeOwnerPopup.style.display = 'block'
     navbar.classList.add("noDisplayNav")
     body.classList.add("bodyFixed")
 
 })
+}
 
+if(homeOwnerPopup) {
 homeOwnerPopup.addEventListener('click', e => {
     if(e.target === homeOwnerPopup )
     homeOwnerPopup.style.display = 'none'
     navbar.classList.remove("noDisplayNav")
     body.classList.remove("bodyFixed")
 })
-
+}
 
 
 buildersBtn .addEventListener('click', () => {
@@ -226,13 +228,18 @@ const allWrappers = document.querySelectorAll('.design__wrapper');
 allServices.forEach(service => service.addEventListener('click', () => {
     navbar.classList.add("noDisplayNav")
 }))
-allWrappers.forEach(wrap => wrap.addEventListener('click', () => {
-    navbar.classList.remove("noDisplayNav")
+allWrappers.forEach(wrap => wrap.addEventListener('click', e => {
+    if(e.target.classList.contains("design__wrapper") || e.target.classList.contains("design__wrapper--close")) {
+        body.classList.remove("bodyFixed")
+        navbar.classList.remove("noDisplayNav")
+        e.target.style.display = 'none'   
+   allWrappers.forEach(wrappy => wrappy.style.display = 'none')  
+      }
 }))
-closeBtnModals.forEach(btn => btn.addEventListener('click', () => {
+/* closeBtnModals.forEach(btn => btn.addEventListener('click', () => {
     twoDplanModal.style.display = 'none'
     navbar.classList.remove("noDisplayNav")
-}))
+})) */
 
 
 twoDplan.addEventListener('click', () => {
@@ -343,40 +350,22 @@ accBtnFor.addEventListener('click', () => {
 
 
 /* ACCORDION RIGHT */
-const accBtnFive = document.querySelector('#button--5');
-
-const plusFive = document.querySelector('#plus--5');
-const minusFive = document.querySelector('#minus--5');
 
 
-accBtnFive.addEventListener('click', () => {
-    plusFive.classList.toggle("plusClass")
-    minusFive.classList.toggle("minusClass")
+const FAQS = document.querySelectorAll(".info__accordion--btn-FAQ")
+
+
+FAQS.forEach(FAQ => {
+    FAQ.addEventListener('click', e => {   
+        const x = e.target.children
+        const children = Array.from(x)
+        children[0].classList.toggle("plusClass")
+        children[1].classList.toggle("minusClass")     
+    })
+    
 })
 
 
-const accBtnSix = document.querySelector('#button--6');
-
-const plusSix = document.querySelector('#plus--6');
-const minusSix = document.querySelector('#minus--6');
-
-
-accBtnSix.addEventListener('click', () => {
-    plusSix.classList.toggle("plusClass")
-    minusSix.classList.toggle("minusClass")
-})
-
-
-const accBtnSeven = document.querySelector('#button--7');
-
-const plusSeven = document.querySelector('#plus--7');
-const minusSeven = document.querySelector('#minus--7');
-
-
-accBtnSeven.addEventListener('click', () => {
-    plusSeven.classList.toggle("plusClass")
-    minusSeven.classList.toggle("minusClass")
-})
 /* info accordian end */
 
 
@@ -453,7 +442,16 @@ expandText.addEventListener('click', e => {
  })
 /*  about logic end */
 
+/* NOVA STRANICA JS */
 
+const whatBtns = document.querySelectorAll(".whatCard__title") 
+
+whatBtns.forEach(btn => {
+    btn.addEventListener("click", e => {
+       e.target.classList.toggle("showTextWhat")
+       console.log(e.target.parentElement)
+    })
+})
 
 
 

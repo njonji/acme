@@ -1,0 +1,90 @@
+.processCardContainer {
+    width: 95%;
+    max-width: 172rem !important;
+    margin: 5rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+
+.processCard {
+    width: 50rem;
+    margin:0 2rem 4rem 2rem;
+    height: auto;
+    min-height: 30rem;
+    padding:2rem 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    border-radius: 2.5rem;
+    color:white;
+
+    &--1 {
+        background:$color-carpet;
+    }
+    &--2 {
+        background:$color-homeowners;
+    }
+    &--3 {
+        background:$color-builders;
+    }
+    @media only screen and (max-width:$bp-huge) {
+        width: 40rem;
+      } 
+
+    @media only screen and (max-width:850px) {
+        width: 48rem;
+      } 
+
+    @media only screen and (max-width:$bp-small-4) {
+        width: 35rem;
+      } 
+
+      &__title {
+          font-weight: 600;
+          font-size: 2.5rem;
+          margin-top: 2rem;
+          padding-bottom: 3rem;
+          
+          
+      }
+
+      &__text {
+          font-size: 1.65rem;
+          text-align: center;
+          animation-name: fadein;
+          animation-duration: .4s;
+          animation-timing-function: ease-in; 
+          overflow: hidden;
+
+      }
+
+      &__button {
+          text-decoration: none;
+          font-size: 1.65rem;
+          color: white;
+          transition: all .3 ease-in-out;
+          cursor: pointer;
+
+          &:hover {
+              color:$color-primary;
+              text-decoration: none;
+          }
+      }
+
+      &__hiddenText {
+          display: none;
+          opacity: 0;
+      }
+}
+
+
+.showTextProcess {
+    opacity: 1;
+    display: block;
+    
+  }

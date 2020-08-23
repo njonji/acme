@@ -1,0 +1,83 @@
+
+.whatCardContainer {
+
+    width: 95%;
+    max-width: 172rem !important;
+    margin: 5rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.whatCard {
+
+    width: 50rem;
+    margin:0 2rem 4rem 2rem;
+    height: 30rem;
+    background:linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.4)), url("/img/pageServices/servicesHome.png")center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 1.5rem;
+    @media only screen and (max-width:$bp-huge) {
+        width: 40rem;
+      } 
+
+    @media only screen and (max-width:850px) {
+        width: 48rem;
+      } 
+
+    @media only screen and (max-width:$bp-small-4) {
+        width: 35rem;
+      } 
+
+    &__title {
+        width: 100%;
+        height: 6rem;
+        background: rgba($color-title, .6);
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        &--h4 {
+            font-size: 1.7rem;
+            letter-spacing: .2px;
+            font-weight: 600;
+            color: $color-white;
+            text-transform: capitalize;
+  
+            
+        }
+    }
+
+    &__text {
+        position: absolute;
+        top: 100%;
+        left:50%;
+        transform: translateX(-50%);
+        color: $color-text;
+        font-size: 1.5rem;
+        width: 50rem;
+        opacity: 0;
+        background: white;
+        border: 3px solid $color-title;
+        border-radius: 1.5rem;
+        z-index: 10;
+        padding:1rem 3rem;
+       display: none;
+       animation-name: fadein;
+       animation-duration: .4s;
+       animation-timing-function: ease-in; 
+       overflow: hidden;
+    }
+}
+
+
+.showTextWhat {
+  opacity: 1;
+  display: block;
+  
+}
