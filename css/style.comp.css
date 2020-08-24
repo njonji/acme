@@ -125,21 +125,22 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  /*     @media only screen and (max-width:$bp-small) {
+        background: transparent;
+        color: rgba(92, 86, 78, .5);
+      } */ }
   .sectionTitle__whatSection {
     background: #C8DED1; }
-  @media only screen and (max-width: 42em) {
-    .sectionTitle {
-      background: transparent;
-      color: rgba(92, 86, 78, 0.5); } }
   .sectionTitle__heading {
     font-size: 3.5rem;
     font-weight: 600;
     color: #fff;
-    text-transform: capitalize; }
-    @media only screen and (max-width: 42em) {
-      .sectionTitle__heading {
-        color: rgba(92, 86, 78, 0.5); } }
+    text-transform: capitalize;
+    /*        @media only screen and (max-width:$bp-small) {
+         
+            color: rgba(92, 86, 78, .5);
+          }  */ }
   .sectionTitle__subheading {
     font-size: 1.8rem;
     color: #808080;
@@ -270,9 +271,10 @@ h1, h2, h3, h4, h5, h6 {
 .transparentNav {
   background: rgba(0, 0, 0, 0.8); }
 
+/* 
 .barsWhite {
-  background-color: #fff !important; }
-
+  background-color: $color-white !important;
+} */
 @media only screen and (max-width: 61.75em) {
   .maliNavNone {
     opacity: 1; } }
@@ -281,7 +283,8 @@ h1, h2, h3, h4, h5, h6 {
   display: none; }
 
 .navbar-transparent {
-  background: transparent; }
+  background: transparent;
+  padding: 2rem 0 0 0; }
   @media only screen and (max-width: 61.75em) {
     .navbar-transparent {
       background: #fff; } }
@@ -289,7 +292,7 @@ h1, h2, h3, h4, h5, h6 {
 .landing {
   width: 100%;
   height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url("/img/pageServices/servicesHome.png") center/cover no-repeat;
+  background: url("/img/pageServices/servicesHome.png") center/cover no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -322,7 +325,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .whatCardContainer {
   width: 95%;
-  max-width: 172rem !important;
+  max-width: 202rem !important;
   margin: 5rem auto;
   display: flex;
   justify-content: center;
@@ -330,15 +333,22 @@ h1, h2, h3, h4, h5, h6 {
   flex-wrap: wrap; }
 
 .whatCard {
-  width: 50rem;
+  width: 63.3rem;
   margin: 0 2rem 4rem 2rem;
-  height: 30rem;
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url("/img/pageServices/servicesHome.png") center/cover no-repeat;
+  height: 35rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url("/img/pageServices/servicesHome.png") center/cover no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
-  border-radius: 1.5rem; }
+  position: relative; }
+  @media only screen and (max-width: 2139px) {
+    .whatCard {
+      width: 55rem;
+      height: 30rem; } }
+  @media only screen and (max-width: 1875px) {
+    .whatCard {
+      width: 50rem;
+      height: 30rem; } }
   @media only screen and (max-width: 110em) {
     .whatCard {
       width: 40rem; } }
@@ -347,20 +357,21 @@ h1, h2, h3, h4, h5, h6 {
       width: 48rem; } }
   @media only screen and (max-width: 25.5em) {
     .whatCard {
-      width: 35rem; } }
+      width: 38rem;
+      height: 25rem; } }
   .whatCard__title {
     width: 100%;
-    height: 6rem;
-    background: rgba(193, 212, 222, 0.6);
+    height: 6.6rem;
+    background: rgba(193, 212, 222, 0.7);
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer; }
     .whatCard__title--h4 {
-      font-size: 1.7rem;
+      font-size: 2rem;
       letter-spacing: .2px;
-      font-weight: 600;
+      font-weight: 700;
       color: #fff;
       text-transform: capitalize; }
   .whatCard__text {
@@ -373,8 +384,6 @@ h1, h2, h3, h4, h5, h6 {
     width: 50rem;
     opacity: 0;
     background: white;
-    border: 3px solid #c1d4de;
-    border-radius: 1.5rem;
     z-index: 10;
     padding: 1rem 3rem;
     display: none;
@@ -382,6 +391,21 @@ h1, h2, h3, h4, h5, h6 {
     animation-duration: .4s;
     animation-timing-function: ease-in;
     overflow: hidden; }
+    @media only screen and (max-width: 2139px) {
+      .whatCard__text {
+        width: 55rem; } }
+    @media only screen and (max-width: 1875px) {
+      .whatCard__text {
+        width: 50rem; } }
+    @media only screen and (max-width: 110em) {
+      .whatCard__text {
+        width: 40rem; } }
+    @media only screen and (max-width: 850px) {
+      .whatCard__text {
+        width: 48rem; } }
+    @media only screen and (max-width: 25.5em) {
+      .whatCard__text {
+        width: 38rem; } }
 
 .showTextWhat {
   opacity: 1;
@@ -423,12 +447,18 @@ h1, h2, h3, h4, h5, h6 {
       width: 48rem; } }
   @media only screen and (max-width: 25.5em) {
     .processCard {
-      width: 35rem; } }
+      width: 40rem;
+      padding: 1rem;
+      margin: 0 0 4rem 0;
+      min-height: 25rem; } }
   .processCard__title {
     font-weight: 600;
     font-size: 2.5rem;
     margin-top: 2rem;
     padding-bottom: 3rem; }
+    @media only screen and (max-width: 25.5em) {
+      .processCard__title {
+        padding-bottom: 1rem; } }
   .processCard__text {
     font-size: 1.65rem;
     text-align: center;

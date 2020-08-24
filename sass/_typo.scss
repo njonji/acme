@@ -53,10 +53,10 @@
         background: #C8DED1;
     }
 
-    @media only screen and (max-width:$bp-small) {
+/*     @media only screen and (max-width:$bp-small) {
         background: transparent;
         color: rgba(92, 86, 78, .5);
-      }
+      } */
 
     &__heading {
         font-size: 3.5rem;
@@ -64,10 +64,10 @@
         color: $color-white;
         text-transform: capitalize;
 
-        @media only screen and (max-width:$bp-small) {
+ /*        @media only screen and (max-width:$bp-small) {
          
             color: rgba(92, 86, 78, .5);
-          } 
+          }  */
     }
   
     &__subheading {

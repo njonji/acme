@@ -2,7 +2,7 @@
 .whatCardContainer {
 
     width: 95%;
-    max-width: 172rem !important;
+    max-width: 202rem !important;
     margin: 5rem auto;
     display: flex;
     justify-content: center;
@@ -12,15 +12,23 @@
 
 .whatCard {
 
-    width: 50rem;
+  width: 63.3rem;
     margin:0 2rem 4rem 2rem;
-    height: 30rem;
-    background:linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.4)), url("/img/pageServices/servicesHome.png")center/cover no-repeat;
+    height: 35rem;
+    background:linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.2)), url("/img/pageServices/servicesHome.png")center/cover no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-    border-radius: 1.5rem;
+ 
+    @media only screen and (max-width:2139px) {
+      width: 55rem;
+      height: 30rem;
+      } 
+    @media only screen and (max-width:1875px) {
+      width: 50rem;
+      height: 30rem;
+      } 
     @media only screen and (max-width:$bp-huge) {
         width: 40rem;
       } 
@@ -30,22 +38,23 @@
       } 
 
     @media only screen and (max-width:$bp-small-4) {
-        width: 35rem;
+        width: 38rem;
+        height:25rem;
       } 
 
     &__title {
         width: 100%;
-        height: 6rem;
-        background: rgba($color-title, .6);
+        height: 6.6rem;
+        background: rgba($color-title, .7);
         text-align: center;
         display: flex;
         align-items: center;
         justify-content: center;
         cursor: pointer;
         &--h4 {
-            font-size: 1.7rem;
+            font-size: 2rem;
             letter-spacing: .2px;
-            font-weight: 600;
+            font-weight: 700;
             color: $color-white;
             text-transform: capitalize;
   
@@ -63,8 +72,6 @@
         width: 50rem;
         opacity: 0;
         background: white;
-        border: 3px solid $color-title;
-        border-radius: 1.5rem;
         z-index: 10;
         padding:1rem 3rem;
        display: none;
@@ -72,6 +79,26 @@
        animation-duration: .4s;
        animation-timing-function: ease-in; 
        overflow: hidden;
+
+       @media only screen and (max-width:2139px) {
+        width: 55rem;
+    
+        } 
+      @media only screen and (max-width:1875px) {
+        width: 50rem;
+  
+        } 
+      @media only screen and (max-width:$bp-huge) {
+          width: 40rem;
+        } 
+  
+      @media only screen and (max-width:850px) {
+          width: 48rem;
+        } 
+  
+      @media only screen and (max-width:$bp-small-4) {
+          width: 38rem;
+        } 
     }
 }
 

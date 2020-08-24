@@ -7,9 +7,10 @@
     left: 0;
     width: 100%;
     transition:  all .5s;
+
     @media only screen and (max-width:$bp-large) {
       opacity: 0;
-      }
+      } 
 
     &__links {
          padding-right: 23rem;
@@ -146,10 +147,10 @@
    
    
 }
-
+/* 
 .barsWhite {
   background-color: $color-white !important;
-}
+} */
 
 
 .maliNavNone {
@@ -163,6 +164,7 @@
 }
 .navbar-transparent {
   background: transparent;
+  padding: 2rem 0 0 0;
   @media only screen and (max-width:$bp-large) {
     background: $color-white;
     }

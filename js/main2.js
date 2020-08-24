@@ -57,6 +57,41 @@ $(document).ready(function() {
 })
 
 
+/* 
+ADING TRANSPARENT BACKGROUND TO NAV */
+
+
+const navbar = document.querySelector(".navbar")
+
+const toggler = document.querySelector(".navbar-toggler")
+const barOne = document.querySelector(".bar1")
+const barTwo = document.querySelector(".bar2")
+const barTre = document.querySelector(".bar3")
+
+
+toggler.addEventListener("click", e => {
+    barOne.classList.toggle("change1")
+    barTwo.classList.toggle("change2")
+    barTre.classList.toggle("change3")
+    navbar.classList.toggle('transparentNav')
+    barOne.classList.toggle('barsWhite')
+    barTre.classList.toggle('barsWhite')
+ 
+})
+ /*  SHOWING NAV ON SCREEN */
+ function stickyNav() {
+    if(window.scrollY >= 50) {
+      navbar.classList.add("maliNavNone")
+        
+    } else {
+      navbar.classList.remove("maliNavNone")
+      
+    }
+}
+window.addEventListener("scroll", stickyNav);
+
+const car = document.querySelector("#carouselIndicators");
+
 /* NOVA STRANICA JS */
 
 const whatBtns = document.querySelectorAll(".whatCard__title") 
