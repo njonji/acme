@@ -1,0 +1,24 @@
+.qa {
+   
+     &__container {
+          margin: 5rem 20rem;
+
+          @media only screen and (max-width:$bp-wide-4) {
+            margin: 5rem 10rem;
+          } 
+          @media only screen and (max-width:$bp-wide-3) {
+            margin: 3rem 5rem;
+          } 
+         
+        &--question {
+            font-size: 1.9rem;
+            color: $color-text;
+            font-weight: 700;
+        }
+        &--answer {
+            font-size: 1.7rem;
+            color: $color-text;
+        }
+     }
+
+}
