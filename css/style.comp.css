@@ -118,6 +118,15 @@ h1, h2, h3, h4, h5, h6 {
   padding: 1rem 2rem;
   margin: 2rem auto; }
 
+.customBtn__what {
+  background: #FAC072 !important;
+  text-align: center;
+  width: 22rem !important;
+  display: block !important;
+  margin: 2rem auto !important; }
+  .customBtn__what:hover {
+    background: rgba(250, 192, 114, 0.7) !important; }
+
 .sectionTitle {
   width: 100%;
   height: 10rem;
@@ -352,6 +361,12 @@ h1, h2, h3, h4, h5, h6 {
   @media only screen and (max-width: 110em) {
     .whatCard {
       width: 40rem; } }
+  @media only screen and (max-width: 80em) {
+    .whatCard {
+      width: 35rem; } }
+  @media only screen and (max-width: 1127px) {
+    .whatCard {
+      width: 30rem; } }
   @media only screen and (max-width: 850px) {
     .whatCard {
       width: 48rem; } }
@@ -442,9 +457,20 @@ h1, h2, h3, h4, h5, h6 {
   @media only screen and (max-width: 110em) {
     .processCard {
       width: 40rem; } }
+  @media only screen and (max-width: 1275px) {
+    .processCard {
+      width: 35rem;
+      min-height: 35rem; } }
+  @media only screen and (max-width: 1131px) {
+    .processCard {
+      width: 30rem;
+      min-height: 35rem;
+      padding: 1rem 1.5rem; } }
   @media only screen and (max-width: 850px) {
     .processCard {
-      width: 48rem; } }
+      width: 48rem;
+      min-height: 30rem;
+      padding: 2rem 4rem; } }
   @media only screen and (max-width: 25.5em) {
     .processCard {
       width: 40rem;
@@ -488,6 +514,9 @@ h1, h2, h3, h4, h5, h6 {
   @media only screen and (max-width: 42em) {
     .dbgallery {
       margin: 5rem 2rem; } }
+  @media only screen and (max-width: 447px) {
+    .dbgallery {
+      margin: 5rem 1rem; } }
 
 .grid-item {
   width: 300px;
@@ -506,10 +535,10 @@ h1, h2, h3, h4, h5, h6 {
       width: 250px; } }
   @media only screen and (max-width: 557px) {
     .grid-item {
-      width: 400px; } }
+      width: 200px; } }
   @media only screen and (max-width: 447px) {
     .grid-item {
-      width: 350px; } }
+      width: 150px; } }
   .grid-item img {
     width: 100%; }
 

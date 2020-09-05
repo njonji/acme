@@ -34,10 +34,26 @@
     }
     @media only screen and (max-width:$bp-huge) {
         width: 40rem;
+
+      } 
+
+      @media only screen and (max-width:1275px) {
+        width: 35rem;
+        min-height: 35rem;
+
+      } 
+
+      @media only screen and (max-width:1131px) {
+        width: 30rem;
+        min-height: 35rem;
+        padding:1rem 1.5rem;
+
       } 
 
     @media only screen and (max-width:850px) {
         width: 48rem;
+        min-height: 30rem;
+        padding:2rem 4rem;
       } 
 
     @media only screen and (max-width:$bp-small-4) {

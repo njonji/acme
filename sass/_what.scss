@@ -33,6 +33,14 @@
         width: 40rem;
       } 
 
+      @media only screen and (max-width:$bp-wide-3) {
+        width: 35rem;
+      } 
+
+      @media only screen and (max-width:1127px) {
+        width: 30rem;
+      } 
+
     @media only screen and (max-width:850px) {
         width: 48rem;
       } 

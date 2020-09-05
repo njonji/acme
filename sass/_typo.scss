@@ -30,12 +30,25 @@
      width: 10rem;
      padding: .5rem 1rem;
     }
+
     &__enq{
      font-size: 1.6rem;
      width: 15rem;
      padding: 1rem 2rem;
      margin: 2rem auto;
  
+    }
+
+    &__what {
+        background: #FAC072 !important;
+        text-align: center;
+        width: 22rem !important;
+        display: block !important;
+        margin: 2rem auto !important;
+
+        &:hover {
+            background: rgba(250, 192, 114, .7) !important;
+        }
     }
 
 }

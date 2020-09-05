@@ -7,6 +7,10 @@
     margin:5rem 2rem;
   } 
 
+  @media only screen and (max-width:447px) {
+    margin:5rem 1rem;
+  } 
+
 }
 
 .grid-item {
@@ -30,11 +34,11 @@
       } 
 
       @media only screen and (max-width:557px) {
-        width: 400px;
+        width: 200px;
       } 
 
       @media only screen and (max-width:447px) {
-        width: 350px;
+        width: 150px;
       } 
 
 
